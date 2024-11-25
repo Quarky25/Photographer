@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ICustomer } from '../model/customer.model';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { Customer } from '../model/customer-list.model';
@@ -13,6 +13,10 @@ export class TestemonialsComponent {
   customers: ICustomer[] = [];
   customer: ICustomer = {} as ICustomer;
   index: number = 0;
+  
+ 
+
+  
 
   constructor(private router: ActivatedRoute, private customerService: Customer) {
     this.customers = this.customerService.getCustomer();
@@ -23,7 +27,8 @@ export class TestemonialsComponent {
         this.customer = this.customers[this.index];
       }
     })
+    
   }
- 
+  
   
 }
