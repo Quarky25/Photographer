@@ -1,26 +1,32 @@
+.container {
+  background-color: rgba(255, 127, 80, 0.405);
+  margin-top: 6rem;
+  border-radius: 5px;
+}
+
 h1 {
   font-size: 2.5rem;
-  color: #343a40;
+  color: var(--midnight-green);
 }
 
 p {
-  color: #555;
+  color: var(--rich-black);
 }
 
 .img-fluid {
-  border: 5px solid #f8f9fa;
+  border: 5px solid var(--midnight-green);
   border-radius: 8px;
 }
 
 .btn-primary {
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: var(--orange-pantone);
+  border-color: var(--midnight-green);
   transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
-  background-color: #0056b3;
-  border-color: #0056b3;
+  background-color: var(--atomic-tangerine);
+  border-color: var(--midnight-green);
 }
 
 #main-content {
@@ -31,12 +37,12 @@ p {
 
 .biography {
   font-size: 1rem;
-  color: #444;
+  color: var(--rich-black);
 }
 
 .biography h3 {
   font-size: 1.5rem;
-  color: #007bff;
+  color: var(--midnight-green);
 }
 
 @keyframes slideIn {
