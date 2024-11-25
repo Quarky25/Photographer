@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TestemonialsComponent } from '../testemonials/testemonials.component';
 
 @Component({
   selector: 'app-home',
