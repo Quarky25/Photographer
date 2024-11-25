@@ -1,0 +1,65 @@
+h1 {
+  font-size: 2.5rem;
+  color: #343a40;
+}
+
+p {
+  color: #555;
+}
+
+.img-fluid {
+  border: 5px solid #f8f9fa;
+  border-radius: 8px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+#main-content {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideIn 1s ease-out forwards;
+}
+
+.biography {
+  font-size: 1rem;
+  color: #444;
+}
+
+.biography h3 {
+  font-size: 1.5rem;
+  color: #007bff;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .biography {
+    font-size: 0.9rem;
+  }
+}
