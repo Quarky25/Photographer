@@ -12,34 +12,17 @@ import { TestemonialsComponent } from './testemonials/testemonials.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
-<<<<<<< HEAD
-    NavbarComponent,
-    HomeComponent,
-    TestemonialsComponent,
-=======
     AboutComponent,
     ContactComponent,
     NavbarComponent,
-    HomeComponent
->>>>>>> 20470f8aaa58754cd339f681ffe861f34b184dec
+    HomeComponent,
+    TestemonialsComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-<<<<<<< HEAD
-    
-  
-=======
-    FormsModule,
-    TestemonialsComponent
-
->>>>>>> 20470f8aaa58754cd339f681ffe861f34b184dec
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
