@@ -15,12 +15,17 @@ import { HomeComponent } from './home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
+
+    NavbarComponent,
+    HomeComponent,
+    TestemonialsComponent,
+
     AboutComponent,
     ContactComponent,
     NavbarComponent,
     HomeComponent,
-    TestemonialsComponent,
   ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
