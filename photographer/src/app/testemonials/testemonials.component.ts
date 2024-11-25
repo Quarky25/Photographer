@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { ICustomer } from '../model/customer.model';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, ParamMap } from '@angular/router';
 import { Customer } from '../model/customer-list.model';
-import { ActivatedRouteService } from '../services/activated-route.service';
+
 
 @Component({
   selector: 'app-testemonials',
@@ -14,8 +14,16 @@ export class TestemonialsComponent {
   customer: ICustomer = {} as ICustomer;
   index: number = 0;
 
-  constructor(private router: ActivatedRouteService, private customerService: Customer) {
-    this.customer = this.router.getRouteParam();
+  constructor(private router: ActivatedRoute, private customerService: Customer) {
     this.customers = this.customerService.getCustomer();
+    this.router.paramMap.subscribe((params: ParamMap) => {
+      const id = params.get('id');
+      if(id !== null) {
+        this.index = +id;
+        this.customer = this.customers[this.index];
+      }
+    })
   }
+ 
+  
 }

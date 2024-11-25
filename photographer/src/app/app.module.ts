@@ -11,6 +11,8 @@ import { TestemonialsComponent } from './testemonials/testemonials.component';
 
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
+import { CarouselModule } from 'primeng/carousel';
+
 
 @NgModule({
   declarations: [
@@ -24,8 +26,9 @@ import { HomeComponent } from './home/home.component';
     ContactComponent,
     NavbarComponent,
     HomeComponent,
+    
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, CarouselModule],
   providers: [],
   bootstrap: [AppComponent],
 })
