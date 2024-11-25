@@ -26,7 +26,6 @@ import { HomeComponent } from './home/home.component';
     HomeComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
