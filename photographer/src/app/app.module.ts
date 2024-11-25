@@ -30,12 +30,8 @@ import { HomeComponent } from './home/home.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-
-    
-  
-
     FormsModule,
-    TestemonialsComponent
+    
 
   ],
   providers: [],
