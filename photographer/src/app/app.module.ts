@@ -16,28 +16,27 @@ import { HomeComponent } from './home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
-<<<<<<< HEAD
+
     NavbarComponent,
     HomeComponent,
     TestemonialsComponent,
-=======
+
     AboutComponent,
     ContactComponent,
     NavbarComponent,
     HomeComponent
->>>>>>> 20470f8aaa58754cd339f681ffe861f34b184dec
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-<<<<<<< HEAD
+
     
   
-=======
+
     FormsModule,
     TestemonialsComponent
 
->>>>>>> 20470f8aaa58754cd339f681ffe861f34b184dec
   ],
   providers: [],
   bootstrap: [AppComponent]
