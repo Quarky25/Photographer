@@ -1,0 +1,51 @@
+<div class="container">
+  <h1>Get in Touch</h1>
+  <form (ngSubmit)="submitForm()" #contactForm="ngForm">
+    <div class="mb-3">
+      <label for="name">Name</label>
+      <input
+        type="text"
+        id="name"
+        class="form-control"
+        [(ngModel)]="userMessage.name"
+        name="name"
+        required
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        class="form-control"
+        [(ngModel)]="userMessage.email"
+        name="email"
+        required
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="message">Message</label>
+      <textarea
+        id="message"
+        class="form-control"
+        [(ngModel)]="userMessage.message"
+        name="message"
+        required
+      ></textarea>
+    </div>
+
+    <button
+      type="submit"
+      class="btn btn-primary"
+      [disabled]="contactForm.invalid"
+    >
+      Send Message
+    </button>
+  </form>
+  <p class="email">
+    If you prefer, you can also
+    <a href="mailto:contact@example.com">email me directly</a>.
+  </p>
+</div>
