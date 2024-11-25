@@ -8,19 +8,19 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   slides = [
     {
-      img: 'assets/images/ocean.jpg',
+      img: './assets/images/ocean.jpg',
       caption: 'First slide label',
       description:
         'Some representative placeholder content for the first slide.',
     },
     {
-      img: 'assets/images/park.jpg',
+      img: './assets/images/park.webp',
       caption: 'Second slide label',
       description:
         'Some representative placeholder content for the second slide.',
     },
     {
-      img: 'assets/images/sunset.jpg',
+      img: './assets/images/sunset.jpg',
       caption: 'Third slide label',
       description:
         'Some representative placeholder content for the third slide.',

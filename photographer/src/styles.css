@@ -10,3 +10,12 @@
   --atomic-tangerine: #f89d64ff;
   --orange-pantone: #f35d18ff;
 }
+
+body {
+  background-image: linear-gradient(
+    var(--gold),
+    var(--atomic-tangerine),
+    var(--midnight-green),
+    var(--rich-black)
+  );
+}
