@@ -12,23 +12,21 @@ import { TestemonialsComponent } from './testemonials/testemonials.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
+
+    NavbarComponent,
+    HomeComponent,
+    TestemonialsComponent,
+
     AboutComponent,
     ContactComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    TestemonialsComponent
-
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
