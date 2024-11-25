@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
         'Some representative placeholder content for the first slide.',
     },
     {
-      img: './assets/images/park.jpg',
+      img: './assets/images/park.webp',
       caption: 'Second slide label',
       description:
         'Some representative placeholder content for the second slide.',
