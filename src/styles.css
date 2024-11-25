@@ -1,0 +1,21 @@
+:root {
+  /* color variables */
+
+  --rich-black: #081020ff;
+  --gold: #ffd51aff;
+  --orange-wheel: #fd800dff;
+  --midnight-green: #1a454cff;
+  --cinnabar: #d2532dff;
+  --caribbean-current: #356962ff;
+  --atomic-tangerine: #f89d64ff;
+  --orange-pantone: #f35d18ff;
+}
+
+body {
+  background-image: linear-gradient(
+    var(--gold),
+    var(--atomic-tangerine),
+    var(--midnight-green),
+    var(--rich-black)
+  );
+}
