@@ -3,11 +3,11 @@
    width="16"
    height="16"
    fill="currentColor"
-   class="bi bi-twitter"
+   class="bi bi-envelope-fill"
    viewBox="0 0 16 16"
    version="1.1"
    id="svg1"
-   sodipodi:docname="twitter.svg"
+   sodipodi:docname="envelope-fill.svg"
    inkscape:version="1.4 (86a8ad7, 2024-10-11)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -33,11 +33,11 @@
        xlink:href="#linearGradient1"
        id="radialGradient2"
        cx="8"
-       cy="8.4996561"
+       cy="8.000001"
        fx="8"
-       fy="8.4996561"
+       fy="8.000001"
        r="8"
-       gradientTransform="matrix(1,0,0,0.81254309,0,1.5933192)"
+       gradientTransform="matrix(1,0,0,0.75000006,0,1.9999997)"
        gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
@@ -59,7 +59,7 @@
      inkscape:window-maximized="1"
      inkscape:current-layer="svg1" />
   <path
-     d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"
+     d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"
      id="path1"
      style="fill:url(#radialGradient2)" />
 </svg>
