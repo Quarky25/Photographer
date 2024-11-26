@@ -13,9 +13,7 @@
 
 body {
   background-image: linear-gradient(
-    var(--gold),
-    var(--atomic-tangerine),
-    var(--midnight-green),
-    var(--rich-black)
+    var(--caribbean-current),
+    var(--midnight-green)
   );
 }

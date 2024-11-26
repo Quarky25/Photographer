@@ -8,7 +8,7 @@
 h1 {
   text-align: center;
   font-size: 2.5rem;
-  color: var(--midnight-green);
+  color: var(--orange-pantone);
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
@@ -16,7 +16,7 @@ h1 {
 form {
   max-width: 600px;
   margin: 0 auto;
-  background: var(--caribbean-current);
+  background: var(--midnight-green);
   color: var(--atomic-tangerine);
   padding: 2rem;
   border-radius: 8px;
