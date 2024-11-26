@@ -13,6 +13,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { CarouselModule } from 'primeng/carousel';
 import { StarRatingComponent } from './star-rating/star-rating.component';
+import { AwardComponent } from './award/award.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { StarRatingComponent } from './star-rating/star-rating.component';
     ContactComponent,
     NavbarComponent,
     HomeComponent,
+    AwardComponent,
     
     
   ],
