@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
   slides = [
@@ -12,68 +12,68 @@ export class HomeComponent implements OnInit {
       header: 'First slide label',
       body: 'Some representative placeholder content for the first slide.',
       colour: '#242846',
-      img: './images/home/ocean.jpg'
+      img: './images/home/ocean.jpg',
     },
     {
       id: 1,
       header: 'Second slide label',
       body: 'Some representative placeholder content for the second slide.',
       colour: '#ba9077',
-      img: './images/home/park.webp'
+      img: './images/home/park.webp',
     },
     {
       id: 2,
       header: 'Third slide label',
       body: 'Some representative placeholder content for the third slide.',
       colour: '#1ABC9C',
-      img: './images/home/sunset.jpg'
+      img: './images/home/sunset.jpg',
     },
     {
       id: 3,
       header: 'Third slide label',
       body: 'Some representative placeholder content for the third slide.',
       colour: '#1ABC9C',
-      img: './images/home/ocean.jpg'
+      img: './images/home/ocean.jpg',
     },
     {
       id: 4,
       header: 'Third slide label',
       body: 'Some representative placeholder content for the third slide.',
       colour: '#1ABC9C',
-      img: './images/home/park.webp'
+      img: './images/home/park.webp',
     },
     {
       id: 5,
       header: 'Third slide label',
       body: 'Some representative placeholder content for the third slide.',
       colour: '#1ABC9C',
-      img: './images/home/sunset.jpg'
-    }
+      img: './images/home/sunset.jpg',
+    },
   ];
 
   activeID = 0;
   wrapperStyle = {
-    backgroundImage: `url('${this.slides[0].img}')`
+    backgroundImage: `url('${this.slides[0].img}')`,
   };
   panelStyle = {
-    background: this.slides[0].colour
+    background: this.slides[0].colour,
   };
   buttonHover = false;
   buttonStyle = {
-    color: '#ffffff'
+    color: '#ffffff',
   };
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void { }
+  ngOnInit(): void {}
 
   changeActive(id: number) {
     this.activeID = id;
     this.wrapperStyle = {
-      backgroundImage: `url('${this.slides[id].img}')`
+      backgroundImage: `url('${this.slides[id].img}')`,
     };
     this.panelStyle = {
-      background: this.slides[id].colour
+      background: this.slides[id].colour,
     };
   }
 
@@ -81,12 +81,12 @@ export class HomeComponent implements OnInit {
     if (!this.buttonHover) {
       this.buttonHover = true;
       this.buttonStyle = {
-        color: this.slides[this.activeID].colour
+        color: this.slides[this.activeID].colour,
       };
     } else {
       this.buttonHover = false;
       this.buttonStyle = {
-        color: '#ffffff'
+        color: '#ffffff',
       };
     }
   }
