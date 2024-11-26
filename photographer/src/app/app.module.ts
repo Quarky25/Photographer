@@ -26,7 +26,7 @@ import { AwardComponent } from './award/award.component';
     ContactComponent,
     NavbarComponent,
     HomeComponent,
-    StarRatingComponent,
+    
     AwardComponent,
   ],
   imports: [
@@ -36,6 +36,7 @@ import { AwardComponent } from './award/award.component';
     CarouselModule,
     ReactiveFormsModule,
     TestemonialsComponent,
+    StarRatingComponent,
   ],
   bootstrap: [AppComponent],
 })

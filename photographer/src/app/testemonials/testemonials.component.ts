@@ -2,12 +2,15 @@ import { Component, Input } from '@angular/core';
 import { ICustomer } from '../model/customer.model';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { Customer } from '../model/customer-list.model';
+import { StarRatingComponent } from '../star-rating/star-rating.component';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
   selector: 'app-testemonials',
   templateUrl: './testemonials.component.html',
   standalone: true,
+  imports:[StarRatingComponent, CommonModule],
   styleUrl: './testemonials.component.css'
 })
 export class TestemonialsComponent {

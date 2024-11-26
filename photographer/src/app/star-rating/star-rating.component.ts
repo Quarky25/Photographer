@@ -1,8 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-star-rating',
   templateUrl: './star-rating.component.html',
+  standalone: true,
+  imports: [CommonModule],
   styleUrl: './star-rating.component.css'
 })
 export class StarRatingComponent implements OnChanges {
