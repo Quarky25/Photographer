@@ -1,4 +1,8 @@
-<section class="wrapper" [style]="wrapperStyle">
+<div *ngIf="isLoading" class="loading-screen">
+  <div class="loader"></div>
+</div>
+
+<section *ngIf="!isLoading" class="wrapper" [ngClass]="{ loaded: !isLoading }">
   <div class="selectors">
     <div
       *ngFor="let slide of slides; let i = index"
@@ -7,6 +11,7 @@
       (click)="changeActive(i)"
     ></div>
   </div>
+
   <aside class="panel" [style]="panelStyle">
     <h2 class="panel-header">{{ slides[activeID].header }}</h2>
     <p class="panel-info">{{ slides[activeID].body }}</p>
@@ -21,4 +26,6 @@
   </aside>
 </section>
 
-<div><app-testemonials></app-testemonials></div>
+<div *ngIf="!isLoading">
+  <app-testemonials></app-testemonials>
+</div>

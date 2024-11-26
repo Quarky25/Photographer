@@ -63,9 +63,19 @@ export class HomeComponent implements OnInit {
     color: '#ffffff',
   };
 
+  isLoading = true;
+
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    setTimeout(() => {
+      this.isLoading = false;
+
+      setTimeout(() => {
+        document.querySelector('.wrapper')?.classList.add('loaded');
+      }, 100);
+    }, 3000);
+  }
 
   changeActive(id: number) {
     this.activeID = id;
