@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
-import { ICustomer } from '../model/customer.model'
-import { Customer } from '../model/customer-list.model';
+import { Component, Input } from '@angular/core';
+import { ICustomer } from '../model/customer.model';
 import { ActivatedRoute, ParamMap } from '@angular/router';
+import { Customer } from '../model/customer-list.model';
 import { StarRatingComponent } from '../star-rating/star-rating.component';
 import { CommonModule } from '@angular/common';
 
@@ -17,6 +17,10 @@ export class TestemonialsComponent {
   customers: ICustomer[] = [];
   customer: ICustomer = {} as ICustomer;
   index: number = 0;
+  
+ 
+
+  
 
   constructor(private router: ActivatedRoute, private customerService: Customer) {
     this.customers = this.customerService.getCustomer();
@@ -27,7 +31,8 @@ export class TestemonialsComponent {
         this.customer = this.customers[this.index];
       }
     })
+    
   }
- 
+  
   
 }
