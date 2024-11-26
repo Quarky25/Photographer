@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostBinding } from '@angular/core';
 
 @Component({
   selector: 'app-award',
@@ -9,4 +9,17 @@ export class AwardComponent {
 awardTitle: string = 'Photography Excellence Award';
 awardedTo: string = 'John Doe';
 description: string = 'For outstanding achievement in capturing breathtaking moments and emotions';
+
+backgroundImages: string[] = [
+  './images/home/ocean.jpg',
+  './images/home/park.webp',
+  './images/home/sunset.jpg'
+];
+currentBackgroundIndex = 0;
+@HostBinding('style.--bg-image') get bgImage() {
+  return `url(${this.backgroundImages[this.currentBackgroundIndex]})`;
+}
+changeBackground() {
+  this.currentBackgroundIndex = (this.currentBackgroundIndex + 1) % this.backgroundImages.length;
+}
 }

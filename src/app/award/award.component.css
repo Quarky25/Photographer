@@ -16,6 +16,10 @@
   color: white;
   text-align: center;
   overflow: auto;
+  background-image: var(--bg-image);
+  background-position: center;
+  background-size: cover;
+  transition: background-image 0.5s ease-in-out;
 }
 
 .award-header {
