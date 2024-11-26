@@ -1,0 +1,71 @@
+.container {
+  background-color: rgba(255, 127, 80, 0.405);
+  margin-top: 6rem;
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: var(--midnight-green);
+}
+
+p {
+  color: var(--rich-black);
+}
+
+.img-fluid {
+  border: 5px solid var(--midnight-green);
+  border-radius: 8px;
+}
+
+.btn-primary {
+  background-color: var(--orange-pantone);
+  border-color: var(--midnight-green);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--atomic-tangerine);
+  border-color: var(--midnight-green);
+}
+
+#main-content {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideIn 1s ease-out forwards;
+}
+
+.biography {
+  font-size: 1rem;
+  color: var(--rich-black);
+}
+
+.biography h3 {
+  font-size: 1.5rem;
+  color: var(--midnight-green);
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .biography {
+    font-size: 0.9rem;
+  }
+}

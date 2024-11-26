@@ -8,19 +8,26 @@ import { TestemonialsComponent } from './testemonials/testemonials.component';
 
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
-import { FooterComponent } from './footer/footer.component';
+import { CarouselModule } from 'primeng/carousel';
+import { StarRatingComponent } from './star-rating/star-rating.component';
+import { AwardComponent } from './award/award.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
 
-    
-
     NavbarComponent,
     HomeComponent,
-    FooterComponent
+    TestemonialsComponent,
 
+    AboutComponent,
+    ContactComponent,
+    NavbarComponent,
+    HomeComponent,
+    StarRatingComponent,
+    AwardComponent
+    
   ],
   imports: [
     BrowserModule,

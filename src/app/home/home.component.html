@@ -1,0 +1,63 @@
+<!-- home.component.html -->
+<section class="wrapper" [style]="wrapperStyle">
+  <div class="selectors">
+    <div *ngFor="let slide of slides; let i = index" class="selector" [class.active]="i === activeID" (click)="changeActive(i)"></div>
+  </div>
+  <aside class="panel" [style]="panelStyle">
+    <h2 class="panel-header">{{ slides[activeID].header }}</h2>
+    <p class="panel-info">{{ slides[activeID].body }}</p>
+    <button class="panel-button" [style]="buttonStyle" (mouseover)="buttonColour()" (mouseout)="buttonColour()">
+      Read More
+    </button>
+  </aside>
+</section>
+
+
+
+
+
+<!-- <div id="carouselExampleDark" class="carousel carousel-dark slide">
+  <div class="carousel-indicators">
+    <button
+      *ngFor="let slide of slides; let i = index"
+      type="button"
+      [attr.data-bs-target]="'#carouselExampleDark'"
+      [attr.data-bs-slide-to]="i"
+      [class.active]="i === 0"
+      [attr.aria-label]="'Slide ' + (i + 1)"
+    ></button>
+  </div>
+  <div class="carousel-inner">
+    <div
+      *ngFor="let slide of slides; let i = index"
+      class="carousel-item"
+      [class.active]="i === 0"
+      [attr.data-bs-interval]="i === 0 ? 10000 : 2000"
+    >
+      <img [src]="slide.img" class="d-block w-100" alt="..." />
+      <div class="carousel-caption d-none d-md-block">
+        <h5>{{ slide.caption }}</h5>
+        <p>{{ slide.description }}</p>
+      </div>
+    </div>
+  </div>
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#carouselExampleDark"
+    data-bs-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#carouselExampleDark"
+    data-bs-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div><app-testemonials></app-testemonials></div> -->
