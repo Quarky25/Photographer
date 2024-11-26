@@ -1,186 +1,155 @@
-
-@import 'https://fonts.googleapis.com/css?family=Antic+Didone|Montserrat:700';
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=Montserrat:wght@700&display=swap');
 
 :root {
-  --white: #fff;
-  font-family: 'Antic Didone';
-  font-size: 16px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Antic Didone', serif;
+    font-size: 13px;
 }
 
+@media screen and (min-width: 760px) {
+    :root {
+        font-size: 15px;
+    }
+}
+@media screen and (min-width: 820px) {
+    :root {
+        font-size: 16px;
+    }
+}
 @media screen and (min-width: 900px) {
-  :root {
-    font-size: 17px;
-  }
+    :root {
+        font-size: 17px;
+    }
 }
-
 @media screen and (min-width: 980px) {
-  :root {
-    font-size: 18px;
-  }
+    :root {
+        font-size: 18px;
+    }
 }
-
 @media screen and (min-width: 1060px) {
-  :root {
-    font-size: 19px;
-  }
+    :root {
+        font-size: 19px;
+    }
 }
-
 @media screen and (min-width: 1220px) {
-  :root {
-    font-size: 20px;
-  }
+    :root {
+        font-size: 20px;
+    }
 }
-
 @media screen and (min-width: 1400px) {
-  :root {
-    font-size: 22px;
-  }
+    :root {
+        font-size: 22px;
+    }
 }
-
+  
 html,
 body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-section.wrapper {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  transition: background-image 500ms ease-in-out;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    padding-top: 56px;
 }
 
 .selectors {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 30px;
-  background: rgba(0, 0, 0, 0.1);
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    background: rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
 }
 
-.selector {
-  border: 1px solid var(--white);
-  background: none;
-  width: 11px;
-  height: 11px;
-  border-radius: 50%;
-  margin: 5px 0;
-  opacity: 0.6;
-  cursor: pointer;
-  transition: background .3s ease-in-out, opacity .3s ease-in-out;
+.selectors .selector {
+    border: 1px solid #fff;
+    background: none;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    margin: 5px 0;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
-.selector:hover,
-.selector.active {
-  background: white;
-  opacity: 0.9;
+.selectors .selector:hover,
+.selectors .selector.active {
+    background: white;
+    opacity: 0.9;
+}
+
+section.wrapper {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transition: background-image 500ms ease-in-out;
+    /* margin-top: 56px;  */
 }
 
 aside.panel {
-  width: 40vw;
-  height: 100%;
-  opacity: 0.9;
-  color: var(--white);
-  box-shadow: 5px 0 25px 0 rgba(0, 0, 0, 0.3);
-  transition: background 500ms ease-in-out;
+    width: 40vw;
+    height: 100%;
+    opacity: 0.9;
+    color: #fff;
+    box-shadow: 5px 0 25px 0 rgba(0, 0, 0, 0.3);
+    transition: background 500ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.panel-header,
-.panel-info {
-  margin: 0;
-  padding: 1.3rem 3.5rem;
+aside.panel h2.panel-header,
+aside.panel p.panel-info {
+    margin: 0;
+    padding: 1.2rem 3.4rem;
+    font-family: 'Antic Didone'
 }
 
-.panel-header {
-  padding-top: 2em;
-  font-weight: normal;
-  font-size: 2.5rem;
-  text-transform: capitalize;
+aside.panel h2.panel-header {
+    /* padding-top: 1em; */
+    font-weight: normal;
+    font-size: 2.5rem;
+    text-transform: capitalize;
 }
 
-.panel-info {
-  font-size: 1.2rem;
+aside.panel p.panel-info {
+    font-size: 1.2rem;
+    line-height: 1.8em;
 }
 
-.panel-button {
-  margin: 1.3rem 3.5rem;
-  padding: 0.8em 1.3em;
-  background: none;
-  border: 1px solid var(--white);
-  color: var(--white);
-  cursor: pointer;
-  font-size: 0.8rem;
-  font-weight: 700;
-  outline: none;
+aside.panel button.panel-button {
+    margin: 1.2rem 3.6rem;
+    padding: 0.8em 1.2em;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: box-shadow 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+aside.panel button.panel-button:hover {
+    box-shadow: inset 0 0 1.5em 1.5em #fff;
+}
+
+aside.panel button.panel-button:focus {
+    outline: none;
 }
 
 @keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-  .carousel-inner img {
-    object-fit: cover;
-    width: 100%;
-    height: 100vh; 
-    object-position: center center;
-  }
-
-@keyframes slideInBottom {
     0% {
-      transform: translateY(100%);
-      opacity: 0;
+        opacity: 0;
     }
     100% {
-      transform: translateY(0); 
-      opacity: 1;
+        opacity: 1;
     }
-  }
-  
-  .carousel-item {
-    animation: slideInBottom 0.5s ease-out; 
-  }
-  
- 
-  .carousel-item-next, .carousel-item-prev {
-    transition: transform 0.5s ease;
-  }
-  
-  
-  .carousel-item-next, .carousel-item-prev {
-    transform: none !important;
-  }
-   */
+}
