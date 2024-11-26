@@ -15,29 +15,28 @@ import { CarouselModule } from 'primeng/carousel';
 import { StarRatingComponent } from './star-rating/star-rating.component';
 import { AwardComponent } from './award/award.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
 
     NavbarComponent,
     HomeComponent,
-    TestemonialsComponent,
 
     AboutComponent,
     ContactComponent,
     NavbarComponent,
     HomeComponent,
     StarRatingComponent,
-    AwardComponent
-    
+    AwardComponent,
   ],
-  imports: [BrowserModule, 
-    AppRoutingModule, 
-    FormsModule, 
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
     CarouselModule,
-    ReactiveFormsModule],
-  providers: [],
-  bootstrap: [AppComponent]
+    ReactiveFormsModule,
+    TestemonialsComponent,
+  ],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
