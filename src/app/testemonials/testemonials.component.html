@@ -1,27 +1,44 @@
 <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
-    <div *ngFor="let customer of customers; let i = index" [ngClass]="{'carousel-item': true, 'active': i === 0}">
-      <div class="d-flex justify-content-center align-items-center flex-column p-4">
-        <img [src]="customer.imageUrl" [alt]="customer.fName" class="rounded-circle mb-3" style="width:100px; height:100px; object-fit:cover;">
-        <h5>{{ customer.fName }} {{customer.lName}}</h5>
+    <div
+      *ngFor="let customer of customers; let i = index"
+      [ngClass]="{ 'carousel-item': true, active: i === 0 }"
+    >
+      <div
+        class="d-flex justify-content-center align-items-center flex-column p-4"
+      >
+        <img
+          [src]="customer.imageUrl"
+          [alt]="customer.fName"
+          class="rounded-circle mb-3"
+          style="width: 100px; height: 100px; object-fit: cover"
+        />
+        <h5>{{ customer.fName }} {{ customer.lName }}</h5>
         <div>
-          <ng-container *ngFor="let star of [].constructor(customer.rating)">
-            <i class="bi bi-star-fill text-warning"></i>
-          </ng-container>
-          <ng-container *ngFor="let star of [].constructor(customer.rating)">
-            <i class="bi bi-star"></i>
-          </ng-container>
+          @if (customer) {
+          <app-star-rating [rating]="customer.rating"></app-star-rating>
+          }
+          <p class="text-center mt-2">{{ customer.testemonial }}</p>
         </div>
-        <p class="text-center mt-2">{{ customer.testemonial }}</p>
       </div>
     </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#testimonialCarousel"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#testimonialCarousel"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
 </div>
