@@ -12,6 +12,7 @@ import { TestemonialsComponent } from './testemonials/testemonials.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { CarouselModule } from 'primeng/carousel';
+import { StarRatingComponent } from './star-rating/star-rating.component';
 
 
 @NgModule({
@@ -20,15 +21,16 @@ import { CarouselModule } from 'primeng/carousel';
 
     NavbarComponent,
     HomeComponent,
-    TestemonialsComponent,
+    
 
     AboutComponent,
     ContactComponent,
     NavbarComponent,
     HomeComponent,
     
+    
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, CarouselModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, CarouselModule,TestemonialsComponent,StarRatingComponent,],
   providers: [],
   bootstrap: [AppComponent],
 })
