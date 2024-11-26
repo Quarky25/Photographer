@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
       header: 'First slide label',
       body: 'Some representative placeholder content for the first slide.',
       colour: '#242846',
-      img: 'public/images/home/ocean.jpg',
+      img: './images/home/ocean.jpg',
     },
     {
       id: 1,
