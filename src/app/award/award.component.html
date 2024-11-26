@@ -1,15 +1,18 @@
-<div class="award-page">
-  <div class="award-container">
-    <div class="award-header">
-      <h2>{{ awardTitle }}</h2>
-      <h3>
-        Awarded to: <strong>{{ awardedTo }}</strong>
-      </h3>
-      <p class="award-date">{{ awardDate }}</p>
+<div class="award-container">
+  <div class="award-header">
+    <h2>{{ awardTitle }}</h2>
+    <div class="image-container">
+      <img
+        src="./images/about/john.jpg"
+        alt="Photographer Portrait"
+        class="img-fluid rounded shadow-lg"
+      />
     </div>
-    <div class="award-content">
-      <p>{{ description }}</p>
-      <img src="./images/award.jpg" alt="Award Image" class="award-image" />
-    </div>
+    <h3>
+      Awarded to: <strong>{{ awardedTo }}</strong>
+    </h3>
+  </div>
+  <div class="award-content">
+    <p>{{ description }}</p>
   </div>
 </div>

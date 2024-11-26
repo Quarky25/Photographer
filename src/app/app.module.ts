@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { TestemonialsComponent } from './testemonials/testemonials.component';
 
@@ -15,25 +15,29 @@ import { CarouselModule } from 'primeng/carousel';
 import { StarRatingComponent } from './star-rating/star-rating.component';
 import { AwardComponent } from './award/award.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
 
     NavbarComponent,
     HomeComponent,
-    
 
     AboutComponent,
     ContactComponent,
     NavbarComponent,
     HomeComponent,
+    
     AwardComponent,
-    
-    
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, CarouselModule,TestemonialsComponent,StarRatingComponent,],
-  providers: [],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    CarouselModule,
+    ReactiveFormsModule,
+    TestemonialsComponent,
+    StarRatingComponent,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

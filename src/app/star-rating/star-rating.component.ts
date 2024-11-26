@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, SimpleChanges } from '@angular/core';
+import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-star-rating',
@@ -8,22 +8,21 @@ import { Component, Input, SimpleChanges } from '@angular/core';
   imports: [CommonModule],
   styleUrl: './star-rating.component.css'
 })
-export class StarRatingComponent {
+export class StarRatingComponent implements OnChanges {
   @Input() rating: number = 0;
   @Input() maxRating: number = 5;
 
-  fullStars: number = 0;
-  emptyStars: number = 0;
+  fullStars: number[] = [];
+  emptyStars: number[] = [];
 
-  ngOnChanges(changes: SimpleChanges) {
-    if (changes['rating']) {
-      this.calculateStars();
-    }
-  }
-
-  private calculateStars(): void {
-    this.fullStars = Math.floor(this.rating);
-    this.emptyStars = this.maxRating - this.fullStars;
+ngOnChanges(changes: SimpleChanges): void {
+  if(changes['rating']) {
+    this.calculateStars();
   }
 }
 
+  private calculateStars(): void {
+    this.fullStars = Array(Math.floor(this.rating)).fill(0);
+    this.emptyStars = Array(this.maxRating - this.fullStars.length).fill(0)
+  }
+}

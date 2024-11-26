@@ -9,11 +9,6 @@
   --caribbean-current: #356962ff;
   --atomic-tangerine: #f89d64ff;
   --orange-pantone: #f35d18ff;
-}
 
-body {
-  background-image: linear-gradient(
-    var(--caribbean-current),
-    var(--midnight-green)
-  );
+  --light-gray: #dddddd;
 }
