@@ -1,0 +1,68 @@
+.footer-wrapper {
+  height: 30vh;
+  width: 100vw;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.footer {
+  height: 28vh;
+  width: 100vw;
+  background: var(--midnight-green);
+  background: linear-gradient(
+    to top,
+    var(--midnight-green) 24%,
+    var(--rich-black) 25%
+  );
+
+  border-radius: 0 40% 0 20%;
+}
+
+.nav-link {
+  color: var(--light-gray);
+  filter: brightness(0.85);
+}
+
+.nav-link:hover {
+  color: var(--orange-wheel);
+  transform: scale(1.08);
+  filter: brightness(1.2);
+}
+
+.col-5 {
+  height: 20vh;
+}
+
+#social-icons {
+  img {
+    width: calc(0.8em + 1vw);
+  }
+}
+
+#disclaimer {
+  color: var(--light-gray);
+  padding: 2rem 0;
+  margin: 0;
+}
+
+.iconAnim {
+  animation-name: icons_anim;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: var(--delay, 0s);
+}
+
+@keyframes icons_anim {
+  0% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+    transform: rotate(15deg);
+  }
+}

@@ -7,6 +7,7 @@ import { Customer } from '../model/customer-list.model';
 @Component({
   selector: 'app-testemonials',
   templateUrl: './testemonials.component.html',
+  standalone: true,
   styleUrl: './testemonials.component.css'
 })
 export class TestemonialsComponent {
