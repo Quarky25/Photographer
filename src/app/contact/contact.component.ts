@@ -9,10 +9,14 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms'
 export class ContactComponent {
   userMessage = { name: '', email: '', message: ''};
 
-submitForm() {
-  alert('Thank you for reaching out! I will get back to you soon, ' +this.userMessage.name);
-  this.userMessage = { name: '', email: '', message: ''};
-}
+  submitForm() {
+    if (this.userMessage.name && this.userMessage.email && this.userMessage.message) {
+      console.log('Form Data:', this.userMessage);
+      alert('Thank you for reaching out! I will get back to you soon, ' +this.userMessage.name);
+    } else {
+      alert('Please fill out the form correctly.');
+    }
+  }
       
     }
   

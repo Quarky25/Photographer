@@ -10,7 +10,25 @@
         [(ngModel)]="userMessage.name"
         name="name"
         required
+        minlength="3"
       />
+
+      <div
+        *ngIf="contactForm.submitted || contactForm.controls['name']?.touched"
+      >
+        <small
+          class="text-warning"
+          *ngIf="contactForm.controls['name']?.errors?.['required']"
+        >
+          Name is required.
+        </small>
+        <small
+          class="text-warning"
+          *ngIf="contactForm.controls['name']?.errors?.['minlength']"
+        >
+          Name must be at least 3 characters.
+        </small>
+      </div>
     </div>
 
     <div class="mb-3">
@@ -22,7 +40,25 @@
         [(ngModel)]="userMessage.email"
         name="email"
         required
+        email
       />
+
+      <div
+        *ngIf="contactForm.submitted || contactForm.controls['email']?.touched"
+      >
+        <small
+          class="text-warning"
+          *ngIf="contactForm.controls['email']?.errors?.['required']"
+        >
+          Email is required.
+        </small>
+        <small
+          class="text-warning"
+          *ngIf="contactForm.controls['email']?.errors?.['email']"
+        >
+          Enter a valid email address.
+        </small>
+      </div>
     </div>
 
     <div class="mb-3">
@@ -33,7 +69,27 @@
         [(ngModel)]="userMessage.message"
         name="message"
         required
+        minlength="10"
       ></textarea>
+
+      <div
+        *ngIf="
+          contactForm.submitted || contactForm.controls['message']?.touched
+        "
+      >
+        <small
+          class="text-warning"
+          *ngIf="contactForm.controls['message']?.errors?.['required']"
+        >
+          Message is required.
+        </small>
+        <small
+          class="text-warning"
+          *ngIf="contactForm.controls['message']?.errors?.['minlength']"
+        >
+          Message must be at least 10 characters long.
+        </small>
+      </div>
     </div>
 
     <button
