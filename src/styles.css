@@ -12,3 +12,10 @@
 
   --light-gray: #dddddd;
 }
+
+body {
+  background-image: linear-gradient(
+    var(--caribbean-current),
+    var(--midnight-green)
+  );
+}
