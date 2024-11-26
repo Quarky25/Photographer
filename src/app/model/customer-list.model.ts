@@ -11,35 +11,35 @@ export class Customer {
             fName: 'Mary',
             lName: 'Doe',
             testemonial: 'This product exceeded my expectations! I will definitely be back for more.',
-            imageUrl: '',
+            imageUrl: './customers/marydoe.jpg',
             rating: 5
         },
         {
             fName: 'Emily',
             lName: 'Johnson',
             testemonial: 'The quality is okay, but I expected more based on the price.',
-            imageUrl: '',
+            imageUrl: './customers/emilyjohnson.jpg',
             rating: 3
         },
         {
             fName: 'Sarah',
             lName: 'Davis',
             testemonial: 'Terrible experience. I will not be returning.',
-            imageUrl: '',
+            imageUrl: './customers/sarahdavis.jpg',
             rating: 0
         },
         {
             fName: 'Michael',
             lName: 'Brown',
             testemonial: 'Not satisfied with my purchase. I had issues with delivery.',
-            imageUrl: '',
+            imageUrl: './customers/michaelbrown.jpg',
             rating: 2
         },
         {
             fName: 'Jane',
             lName: 'Smith',
             testemonial: 'Great service and friendly staff. Highly recommend!',
-            imageUrl: '',
+            imageUrl: './customers/janesmith.jpg',
             rating: 4
         }
     ]
