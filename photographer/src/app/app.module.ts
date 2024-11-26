@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { TestemonialsComponent } from './testemonials/testemonials.component';
 
@@ -29,11 +32,11 @@ import { AwardComponent } from './award/award.component';
     AwardComponent
     
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    TestemonialsComponent
-  ],
+  imports: [BrowserModule, 
+    AppRoutingModule, 
+    FormsModule, 
+    CarouselModule,
+    ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent]
 })
