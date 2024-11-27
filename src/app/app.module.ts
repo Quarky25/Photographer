@@ -16,6 +16,7 @@ import { StarRatingComponent } from './star-rating/star-rating.component';
 import { AwardComponent } from './award/award.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { FooterComponent } from './footer/footer.component';
+import { DetailsComponent } from './details/details.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FooterComponent } from './footer/footer.component';
     HomeComponent,
     FooterComponent,
     AwardComponent,
-          PortfolioComponent,
+    PortfolioComponent,
+    DetailsComponent,
   ],
   imports: [
     BrowserModule,

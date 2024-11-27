@@ -1,12 +1,22 @@
 #heading {
-  font-size: calc(4rem + 2vw);
-  color: aliceblue;
-  margin-top: 5rem;
+  font-size: calc(6rem + 2vw);
+  color: white;
+  margin-top: 10rem;
+
+  font-family: "Lugrasimo", cursive, serif;
+  font-weight: 500;
 }
 
 .headBg {
-  height: 30vh;
+  height: 45vh;
   position: relative;
+}
+
+#galleryContainer {
+  width: 100vw;
+  height: fit-content;
+  background-color: var(--caribbean-current);
+  border: 3rem solid var(--rich-black);
 }
 
 .imgBox {
@@ -14,16 +24,6 @@
   height: calc(9rem + 1vw);
 
   overflow: hidden;
-
-  p {
-    color: white;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: #ffffff80;
-  }
 }
 
 .photos {
@@ -31,6 +31,9 @@
   background-position: center;
   box-shadow: 3px 3px 2px 2px var(--gray-darker);
   transition: all 0.25s;
+}
+.photos:hover {
+  transform: scale(1.1);
 }
 
 .imgBg {
@@ -41,6 +44,10 @@
   border-radius: 5px;
 }
 
+.imgBg:hover {
+  box-shadow: inset 0 0 15px 10px var(--caribbean-current);
+}
+
 #choose {
   width: 100vw;
 }
@@ -49,12 +56,65 @@
   background-color: var(--rich-black);
   width: 20vw;
   height: calc(2rem + 2vw);
-  margin: 2rem 1rem;
+  margin: 3rem calc(0.5rem + 1vw);
   position: relative;
   overflow: hidden;
-  mix-blend-mode: screen;
+  border: 5px solid var(--rich-black);
+
+  border-radius: 50px;
 
   img {
     width: 100%;
+    mix-blend-mode: soft-light;
   }
+}
+
+.overlayTxt {
+  color: var(--caribbean-current);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 20%;
+  text-align: center;
+  font-size: calc(0.45rem + 1vw);
+  filter: brightness(3);
+}
+
+.overlayTxt:hover {
+  transform: scale(1.15);
+  color: var(--i-rich-back);
+}
+
+.category:hover {
+  filter: invert();
+  box-shadow: 0 1px 1px 3px var(--i-rich-back);
+}
+
+.hr1 {
+  position: absolute;
+
+  width: 100vw;
+  top: calc(325px + 1vw);
+  height: 10px;
+
+  background: linear-gradient(
+    to left,
+    #35696200 40%,
+    var(--atomic-tangerine) 60%,
+    var(--cinnabar) 100%
+  );
+}
+.hr2 {
+  position: absolute;
+
+  width: 100vw;
+  top: calc(130px + 1vw);
+  height: 10px;
+
+  background: linear-gradient(
+    to right,
+    #35696200 30%,
+    var(--atomic-tangerine) 60%,
+    var(--cinnabar) 100%
+  );
 }
