@@ -1,4 +1,9 @@
-<div class="award-container">
+<div
+  class="award-container"
+  [ngStyle]="{
+    'background-image': 'url(' + backgroundImages[currentBackgroundIndex] + ')'
+  }"
+>
   <div class="award-header">
     <h2>{{ awardTitle }}</h2>
     <div class="image-container">
@@ -15,4 +20,7 @@
   <div class="award-content">
     <p>{{ description }}</p>
   </div>
+  <button class="btn btn-success" (click)="changeBackground()">
+    Award winning pictures
+  </button>
 </div>

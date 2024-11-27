@@ -15,6 +15,7 @@ import { CarouselModule } from 'primeng/carousel';
 import { StarRatingComponent } from './star-rating/star-rating.component';
 import { AwardComponent } from './award/award.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     ContactComponent,
     NavbarComponent,
     HomeComponent,
-    
+    FooterComponent,
     AwardComponent,
           PortfolioComponent,
   ],
