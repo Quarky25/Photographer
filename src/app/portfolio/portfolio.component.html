@@ -36,19 +36,19 @@
       class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 pe-2"
     >
       @for (item of photos; track $index) { @if (item.id == id) {
-      <div class="imgBg">
+      <div class="imgBg" routerLink="/details/{{ $index }}">
         <div class="imgBox">
           <img class="photos" src="{{ item.img }}" alt="not found" />
         </div>
       </div>
       } @if (id == "all") {
-      <div class="imgBg">
+      <div class="imgBg" routerLink="/details/{{ $index }}">
         <div class="imgBox">
           <img class="photos" src="{{ item.img }}" alt="not found" />
         </div>
       </div>
       } @if (id == "") {
-      <div class="imgBg">
+      <div class="imgBg" routerLink="/details/{{ $index }}">
         <div class="imgBox">
           <img class="photos" src="{{ item.img }}" alt="not found" />
         </div>
