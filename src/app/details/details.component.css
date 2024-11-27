@@ -12,7 +12,7 @@
 
 .row {
   box-shadow: 0 0 25px 10px var(--rich-black);
-  padding-right: 4rem;
+  padding-right: calc(2rem + 2vw);
   background-color: var(--rich-black);
 }
 
@@ -28,6 +28,21 @@
   width: 45%;
   padding: 0;
 }
+
+@media screen and (max-width: 500px) {
+  .imgBox {
+    position: relative;
+    width: 100%;
+    padding: 0;
+  }
+  .row {
+    padding: 1rem;
+  }
+  #heading {
+    margin-top: 5rem;
+  }
+}
+
 #desc {
   /* box-shadow: -15px 0 2px 0 var(--rich-black); */
   background-color: var(--rich-black);
@@ -36,7 +51,7 @@
   p {
     font-size: calc(0.7em + 1vw);
     color: var(--light-gray);
-    padding: 2rem 2rem 2rem 10rem;
+    padding: calc(0.8rem + 2vw);
     text-wrap: wrap;
   }
 }
