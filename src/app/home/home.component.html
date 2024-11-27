@@ -2,30 +2,32 @@
   <div class="loader"></div>
 </div>
 
-<section *ngIf="!isLoading" class="wrapper" [ngClass]="{ loaded: !isLoading }">
-  <div class="selectors">
-    <div
-      *ngFor="let slide of slides; let i = index"
-      class="selector"
-      [class.active]="i === activeID"
-      (click)="changeActive(i)"
-    ></div>
+<div *ngIf="!isLoading" class="main-content">
+  <section class="wrapper" [ngClass]="{ loaded: !isLoading }">
+    <div class="selectors">
+      <div
+        *ngFor="let slide of slides; let i = index"
+        class="selector"
+        [class.active]="i === activeID"
+        (click)="changeActive(i)"
+      ></div>
+    </div>
+
+    <aside class="panel" [style]="panelStyle">
+      <h2 class="panel-header">{{ slides[activeID].header }}</h2>
+      <p class="panel-info">{{ slides[activeID].body }}</p>
+      <button
+        class="panel-button"
+        [style]="buttonStyle"
+        (mouseover)="buttonColour()"
+        (mouseout)="buttonColour()"
+      >
+        Read More
+      </button>
+    </aside>
+  </section>
+
+  <div *ngIf="!isLoading">
+    <app-testemonials></app-testemonials>
   </div>
-
-  <aside class="panel" [style]="panelStyle">
-    <h2 class="panel-header">{{ slides[activeID].header }}</h2>
-    <p class="panel-info">{{ slides[activeID].body }}</p>
-    <button
-      class="panel-button"
-      [style]="buttonStyle"
-      (mouseover)="buttonColour()"
-      (mouseout)="buttonColour()"
-    >
-      Read More
-    </button>
-  </aside>
-</section>
-
-<div *ngIf="!isLoading">
-  <app-testemonials></app-testemonials>
 </div>
