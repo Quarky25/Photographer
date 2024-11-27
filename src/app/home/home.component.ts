@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, NavigationStart, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -70,10 +71,6 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     setTimeout(() => {
       this.isLoading = false;
-
-      setTimeout(() => {
-        document.querySelector('.wrapper')?.classList.add('loaded');
-      }, 100);
     }, 3000);
   }
 

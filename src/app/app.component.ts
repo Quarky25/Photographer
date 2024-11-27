@@ -1,10 +1,30 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
-  title = 'photographer';
+export class AppComponent implements OnInit {
+  isLoading = true;
+
+  ngOnInit() {
+    setTimeout(() => {
+      this.fadeOutLoadingScreen();
+    }, 3000);
+  }
+
+  fadeOutLoadingScreen() {
+    const loadingScreen = document.querySelector(
+      '.loading-screen'
+    ) as HTMLElement;
+
+    if (loadingScreen) {
+      loadingScreen.classList.add('fade-out');
+    }
+
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 1500);
+  }
 }
