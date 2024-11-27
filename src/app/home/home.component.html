@@ -1,16 +1,31 @@
+<div *ngIf="isLoading" class="loading-screen">
+  <div class="loader"></div>
+</div>
 
-<section class="wrapper" [style]="wrapperStyle">
+<section *ngIf="!isLoading" class="wrapper" [ngClass]="{ loaded: !isLoading }">
   <div class="selectors">
-    <div *ngFor="let slide of slides; let i = index" class="selector" [class.active]="i === activeID" (click)="changeActive(i)"></div>
+    <div
+      *ngFor="let slide of slides; let i = index"
+      class="selector"
+      [class.active]="i === activeID"
+      (click)="changeActive(i)"
+    ></div>
   </div>
+
   <aside class="panel" [style]="panelStyle">
     <h2 class="panel-header">{{ slides[activeID].header }}</h2>
     <p class="panel-info">{{ slides[activeID].body }}</p>
-    <button class="panel-button" [style]="buttonStyle" (mouseover)="buttonColour()" (mouseout)="buttonColour()">
+    <button
+      class="panel-button"
+      [style]="buttonStyle"
+      (mouseover)="buttonColour()"
+      (mouseout)="buttonColour()"
+    >
       Read More
     </button>
   </aside>
 </section>
 
-
-<div><app-testemonials></app-testemonials></div>
+<div *ngIf="!isLoading">
+  <app-testemonials></app-testemonials>
+</div>

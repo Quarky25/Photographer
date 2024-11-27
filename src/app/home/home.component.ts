@@ -19,14 +19,14 @@ export class HomeComponent implements OnInit {
       header: 'Second slide label',
       body: 'Some representative placeholder content for the second slide.',
       colour: '#ba9077',
-      img: './images/home/park.webp',
+      img: '/images/home/park.webp',
     },
     {
       id: 2,
       header: 'Third slide label',
       body: 'Some representative placeholder content for the third slide.',
       colour: '#1ABC9C',
-      img: './images/home/sunset.jpg',
+      img: '/images/home/sunset.jpg',
     },
     {
       id: 3,
@@ -63,9 +63,19 @@ export class HomeComponent implements OnInit {
     color: '#ffffff',
   };
 
+  isLoading = true;
+
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    setTimeout(() => {
+      this.isLoading = false;
+
+      setTimeout(() => {
+        document.querySelector('.wrapper')?.classList.add('loaded');
+      }, 100);
+    }, 3000);
+  }
 
   changeActive(id: number) {
     this.activeID = id;
