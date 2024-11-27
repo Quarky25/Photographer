@@ -1,48 +1,59 @@
-<div class="headBg d-flex justify-content-center align-items-center">
+<div
+  class="headBg d-flex justify-content-center align-items-center position-relative"
+>
+  <hr class="opacity-100 border-0 hr2" />
   <h1 id="heading">Gallery</h1>
+  <hr class="opacity-100 border-0 hr1" />
 </div>
 
 <div id="choose" class="d-flex justify-content-center">
   <div class="category" (click)="setID('all')">
     @for (item of randPhotos; track $index) { @if ($index < 1) {
-    <img src="{{ item.img }}" alt=":(" />}}
+    <img src="{{ item.img }}" alt=":(" />
+    <p class="overlayTxt">All</p>
+    }}
   </div>
 
   <div class="category" (click)="setID('n')">
     <img src="./images/portfolio/nature/bee.jpg" alt="" />
+    <p class="overlayTxt">Nature</p>
   </div>
 
   <div class="category" (click)="setID('l')">
     <img src="./images/portfolio/landscape/forest_2.jpg" alt="" />
+    <p class="overlayTxt">Landscape</p>
   </div>
 
   <div class="category" (click)="setID('e')">
     <img src="./images/portfolio/events/drink.jpg" alt="" />
+    <p class="overlayTxt">Events</p>
   </div>
 </div>
 
-<hr />
-
-<div
-  class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 ms-3 me-3"
->
-  @for (item of photos; track $index) { @if (item.id == id) {
-  <div class="imgBg">
-    <div class="imgBox">
-      <img class="photos" src="{{ item.img }}" alt="not found" />
+<div style="height: 1100px">
+  <div id="galleryContainer">
+    <div
+      class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 pe-2"
+    >
+      @for (item of photos; track $index) { @if (item.id == id) {
+      <div class="imgBg">
+        <div class="imgBox">
+          <img class="photos" src="{{ item.img }}" alt="not found" />
+        </div>
+      </div>
+      } @if (id == "all") {
+      <div class="imgBg">
+        <div class="imgBox">
+          <img class="photos" src="{{ item.img }}" alt="not found" />
+        </div>
+      </div>
+      } @if (id == "") {
+      <div class="imgBg">
+        <div class="imgBox">
+          <img class="photos" src="{{ item.img }}" alt="not found" />
+        </div>
+      </div>
+      } }
     </div>
   </div>
-  } @if (id == "all") {
-  <div class="imgBg">
-    <div class="imgBox">
-      <img class="photos" src="{{ item.img }}" alt="not found" />
-    </div>
-  </div>
-  } @if (id == "") {
-  <div class="imgBg">
-    <div class="imgBox">
-      <img class="photos" src="{{ item.img }}" alt="not found" />
-    </div>
-  </div>
-  } }
 </div>

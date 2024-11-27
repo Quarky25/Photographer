@@ -1,165 +1,178 @@
 .loading-screen {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.486);
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-    opacity: 1;
-    transition: opacity 1s ease-in-out;
-    animation: fadeIn 2s ease-in-out forwards;
-    flex-direction: column; 
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.486);
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+  animation: fadeIn 2s ease-in-out forwards;
+  flex-direction: column; 
+}
 
-  .loader {
-    width: fit-content;
-    font-size: 40px;
-    font-family: system-ui, sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: transparent;
-    -webkit-text-stroke: 1px #000;
-    background: 
-      conic-gradient(from -135deg at 100% 50%, #000 90deg, transparent 0) text no-repeat,
-      conic-gradient(from -135deg at 1lh 50%, transparent 90deg, #000 0) text no-repeat;
-    animation: l6 2s linear infinite;
-    margin-bottom: 1rem; 
+.loader {
+  width: fit-content;
+  font-size: 40px;
+  font-family: system-ui, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px #000;
+  background: 
+    conic-gradient(from -135deg at 100% 50%, #000 90deg, transparent 0) text no-repeat,
+    conic-gradient(from -135deg at 1lh 50%, transparent 90deg, #000 0) text no-repeat;
+  animation: l6 2s linear infinite;
+  margin-bottom: 1rem; 
+}
+
+.loader:before {
+  content: "Welcome to Spicy Photography";
+}
+
+@keyframes l6 {
+  0% { 
+    background-size: 0 200%; 
+    background-position: 0 0, 100% 0; 
   }
-  
-  .loader:before {
-    content: "Welcome to Spicy Photography";
+  50% { 
+    background-size: calc(60% + .5lh) 200%; 
+    background-position: 0 0, 100% 0; 
   }
-  
-  @keyframes l6 {
-    0% { 
-      background-size: 0 200%; 
-      background-position: 0 0, 100% 0; 
-    }
-    50% { 
-      background-size: calc(60% + .5lh) 200%; 
-      background-position: 0 0, 100% 0; 
-    }
-    50.01% { 
-      background-size: calc(60% + .5lh) 200%; 
-      background-position: 0 100%, 100% 100%; 
-    }
-    100% { 
-      background-size: 0 200%; 
-      background-position: 0 100%, 100% 100%; 
-    }
+  50.01% { 
+    background-size: calc(60% + .5lh) 200%; 
+    background-position: 0 100%, 100% 100%; 
   }
+  100% { 
+    background-size: 0 200%; 
+    background-position: 0 100%, 100% 100%; 
+  }
+}
+
+.wrapper {
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
   
-  .wrapper {
+}
+
+.wrapper.loaded {
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
     opacity: 0;
-    transition: opacity 1.5s ease-in-out;
   }
-  
-  .wrapper.loaded {
+  100% {
     opacity: 1;
   }
-  
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
+}
 
-  .selectors {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 30px;
-    background: rgba(0, 0, 0, 0.1);
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
   }
-  
-  .selectors .selector {
-    border: 1px solid #fff;
-    background: none;
-    width: 11px;
-    height: 11px;
-    border-radius: 50%;
-    margin: 5px 0;
-    opacity: 0.6;
-    cursor: pointer;
-    transition: background 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  100% {
+    opacity: 0;
   }
-  
-  .selectors .selector:hover,
-  .selectors .selector.active {
-    background: white;
-    opacity: 0.9;
-  }
-  
-  section.wrapper {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    transition: background-image 500ms ease-in-out;
-  }
-  
-  aside.panel {
-    width: 40vw;
-    height: 100%;
-    opacity: 0.9;
-    color: #fff;
-    box-shadow: 5px 0 25px 0 rgba(0, 0, 0, 0.3);
-    transition: background 500ms ease-in-out;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  aside.panel h2.panel-header,
-  aside.panel p.panel-info {
-    margin: 0;
-    padding: 1.2rem 3.4rem;
-    font-family: 'Antic Didone';
-  }
-  
-  aside.panel h2.panel-header {
-    font-weight: normal;
-    font-size: 2.5rem;
-    text-transform: capitalize;
-  }
-  
-  aside.panel p.panel-info {
-    font-size: 1.2rem;
-    line-height: 1.8em;
-  }
-  
-  aside.panel button.panel-button {
-    margin: 1.2rem 3.6rem;
-    padding: 0.8em 1.2em;
-    background: none;
-    border: 1px solid #fff;
-    color: #fff;
-    cursor: pointer;
-    font-family: 'Montserrat';
-    font-size: 0.8rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    transition: box-shadow 0.5s ease-in-out, color 0.5s ease-in-out;
-  }
-  
-  aside.panel button.panel-button:hover {
-    box-shadow: inset 0 0 1.5em 1.5em #fff;
-  }
-  
-  aside.panel button.panel-button:focus {
-    outline: none;
-  }
-  
+}
+
+.loading-screen.fade-out {
+  animation: fadeOut 1.5s ease-in-out forwards;
+}
+
+.selectors {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  background: rgba(0, 0, 0, 0.1);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.selectors .selector {
+  border: 1px solid #fff;
+  background: none;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  margin: 5px 0;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.selectors .selector:hover,
+.selectors .selector.active {
+  background: white;
+  opacity: 0.9;
+}
+
+section.wrapper {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  transition: background-image 500ms ease-in-out;
+}
+
+aside.panel {
+  width: 40vw;
+  height: 100%;
+  opacity: 0.9;
+  color: #fff;
+  box-shadow: 5px 0 25px 0 rgba(0, 0, 0, 0.3);
+  transition: background 500ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+aside.panel h2.panel-header,
+aside.panel p.panel-info {
+  margin: 0;
+  padding: 1.2rem 3.4rem;
+  font-family: 'Antic Didone';
+}
+
+aside.panel h2.panel-header {
+  font-weight: normal;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+}
+
+aside.panel p.panel-info {
+  font-size: 1.2rem;
+  line-height: 1.8em;
+}
+
+aside.panel button.panel-button {
+  margin: 1.2rem 3.6rem;
+  padding: 0.8em 1.2em;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Montserrat';
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: box-shadow 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+aside.panel button.panel-button:hover {
+  box-shadow: inset 0 0 1.5em 1.5em #fff;
+}
+
+aside.panel button.panel-button:focus {
+  outline: none;
+}
