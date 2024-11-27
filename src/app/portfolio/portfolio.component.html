@@ -1,0 +1,48 @@
+<div class="headBg d-flex justify-content-center align-items-center">
+  <h1 id="heading">Gallery</h1>
+</div>
+
+<div id="choose" class="d-flex justify-content-center">
+  <div class="category" (click)="setID('all')">
+    @for (item of randPhotos; track $index) { @if ($index < 1) {
+    <img src="{{ item.img }}" alt=":(" />}}
+  </div>
+
+  <div class="category" (click)="setID('n')">
+    <img src="./images/portfolio/nature/bee.jpg" alt="" />
+  </div>
+
+  <div class="category" (click)="setID('l')">
+    <img src="./images/portfolio/landscape/forest_2.jpg" alt="" />
+  </div>
+
+  <div class="category" (click)="setID('e')">
+    <img src="./images/portfolio/events/drink.jpg" alt="" />
+  </div>
+</div>
+
+<hr />
+
+<div
+  class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 ms-3 me-3"
+>
+  @for (item of photos; track $index) { @if (item.id == id) {
+  <div class="imgBg">
+    <div class="imgBox">
+      <img class="photos" src="{{ item.img }}" alt="not found" />
+    </div>
+  </div>
+  } @if (id == "all") {
+  <div class="imgBg">
+    <div class="imgBox">
+      <img class="photos" src="{{ item.img }}" alt="not found" />
+    </div>
+  </div>
+  } @if (id == "") {
+  <div class="imgBg">
+    <div class="imgBox">
+      <img class="photos" src="{{ item.img }}" alt="not found" />
+    </div>
+  </div>
+  } }
+</div>
