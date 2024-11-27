@@ -50,8 +50,34 @@
                   >App Development</a
                 >
               </li>
+              <li class="dropdown-submenu">
+                <a
+                  class="dropdown-item dropdown-toggle"
+                  (click)="toggleSubmenu($event)"
+                  >Project Details</a
+                >
+
+                <ul class="dropdown-menu submenu">
+                  <li>
+                    <a class="dropdown-item" routerLink="/details/1"
+                      >Project 1</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" routerLink="/details/2"
+                      >Project 2</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" routerLink="/details/3"
+                      >Project 3</a
+                    >
+                  </li>
+                </ul>
+              </li>
             </ul>
           </li>
+
           <li class="nav-item">
             <a class="nav-link" routerLink="/about" routerLinkActive="active"
               >About</a
