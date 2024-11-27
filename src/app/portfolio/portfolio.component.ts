@@ -9,6 +9,7 @@ import { IPhotos, photoList  } from '../model/photos.module';
 export class PortfolioComponent {
 photos: IPhotos[] = photoList;
 id: string = "";
+// onHover: boolean = true;
 
 
 setID(paramID: string): any {

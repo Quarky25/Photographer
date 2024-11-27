@@ -1,12 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Gowun+Dodum&family=Lugrasimo&family=Marck+Script&family=Pacifico&family=Playwrite+AU+NSW:wght@100..400&display=swap");
+
 :root {
   /* color variables */
 
   --rich-black: #081020ff;
+  --i-rich-back: #f7efdf;
   --gold: #ffd51aff;
   --orange-wheel: #fd800dff;
   --midnight-green: #1a454cff;
   --cinnabar: #d2532dff;
   --caribbean-current: #356962ff;
+
   --atomic-tangerine: #f89d64ff;
   --orange-pantone: #f35d18ff;
 
