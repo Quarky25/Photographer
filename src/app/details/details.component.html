@@ -1,30 +1,25 @@
 @if (photo) {
 
 <div>
-  <div id="details">
-    <h2 class="title">
-      <strong>{{ photo.title }}</strong>
-    </h2>
+  <h2 id="heading">
+    <strong>{{ photo.title }}</strong>
+  </h2>
 
-    <div class="row">
-      <div class="imgBox col-md-auto">
-        <img class="imgCar" [src]="photo.img" alt="{{ photo.title }}" />
-      </div>
-      <div
-        class="col d-flex justify-content-center align-items-center"
-        id="desc"
-      >
-        <!-- <p>
-              @if (photo.desc) {
-              {{ photo.desc }}
-              } @else {this car has <br />
-              no description yet}
-            </p> -->
-      </div>
-      <div class="d-flex justify-content-end">
-        <a type="button" class="btn btn-secondary" routerLink="/cart">return</a>
-      </div>
+  <div class="row">
+    <div class="col d-flex justify-content-center align-items-center" id="desc">
+      <p>
+        @if (photo.desc) { <em>"{{ photo.desc }}"</em> } @else {"this Photo has
+        no description yet"}
+      </p>
+    </div>
+    <div class="imgBox col-md-auto">
+      <img class="photo" [src]="photo.img" alt="{{ photo.title }}" />
     </div>
   </div>
+</div>
+<div class="d-flex justify-content-end" id="btnBg">
+  <a type="button" class="btn btn-lg btn-secondary" routerLink="/portfolio"
+    >return</a
+  >
 </div>
 }
