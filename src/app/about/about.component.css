@@ -1,6 +1,7 @@
 .container {
   background-color: rgba(255, 127, 80, 0.405);
   margin-top: 6rem;
+  margin-bottom: 4rem;
   border-radius: 5px;
 }
 
@@ -25,7 +26,7 @@ p {
 }
 
 .btn-primary:hover {
-  background-color: var(--atomic-tangerine);
+  background-color: var(--cinnabar);
   border-color: var(--midnight-green);
 }
 
@@ -40,9 +41,19 @@ p {
   color: var(--rich-black);
 }
 
-.biography h3 {
+h3 {
   font-size: 1.5rem;
   color: var(--midnight-green);
+}
+
+h4 {
+  font-size: 1.2rem;
+  color: var(--midnight-green);
+}
+
+li {
+  font-size: 1rem;
+  color: var(--rich-black);
 }
 
 @keyframes slideIn {
