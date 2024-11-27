@@ -1,6 +1,6 @@
 .container {
-  margin-top: 12rem;
-  margin-bottom: 14rem;
+  margin-top: 10rem;
+  margin-bottom: 16rem;
   opacity: 0;
   transform: translateY(20px);
   animation: slideIn 1s ease-out forwards;
