@@ -1,7 +1,7 @@
-<div *ngIf="!isLoading">
+<div>
   <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Spicy Photography</a>
+      <a class="navbar-brand" routerLink="landing">Spicy Photography</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -19,7 +19,7 @@
             <a
               class="nav-link active"
               aria-current="page"
-              routerLink="/"
+              [routerLink]="['/home']"
               routerLinkActive="active"
               >Home</a
             >

@@ -18,6 +18,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { FooterComponent } from './footer/footer.component';
 import { DetailsComponent } from './details/details.component';
 import { LoadingComponent } from './loading/loading.component';
+import { LayoutComponent } from './layout/layout.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,7 @@ import { LoadingComponent } from './loading/loading.component';
     PortfolioComponent,
     DetailsComponent,
     LoadingComponent,
+    LayoutComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,6 +47,9 @@ import { LoadingComponent } from './loading/loading.component';
     ReactiveFormsModule,
     TestemonialsComponent,
     StarRatingComponent,
+  ],
+  providers: [
+    provideAnimationsAsync(),
   ],
   bootstrap: [AppComponent],
 })

@@ -1,0 +1,9 @@
+<div [@routeAnimations]="getRouteAnimationData()">
+  <section class="layout" [@fadeAnimation] *ngIf="!isLoading">
+    <app-navbar></app-navbar>
+
+    <router-outlet [ngClass]="{ loaded: !isLoading }"></router-outlet>
+
+    <app-footer></app-footer>
+  </section>
+</div>

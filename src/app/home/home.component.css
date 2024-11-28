@@ -76,16 +76,6 @@
   animation: fadeOut 1.5s ease-in-out forwards;
 } */
 
-.wrapper {
-  opacity: 0;
-  transition: opacity 1.5s ease-in-out;
-  
-}
-
-.wrapper.loaded {
-  opacity: 1;
-}
-
 .selectors {
   position: absolute;
   top: 0;
@@ -147,7 +137,7 @@ aside.panel h2.panel-header {
   font-weight: normal;
   font-size: 2.5rem;
   text-transform: capitalize;
-  font-family: 'Lugrasimo';
+  font-family: "Lugrasimo";
 }
 
 aside.panel p.panel-info {
@@ -162,7 +152,7 @@ aside.panel button.panel-button {
   border: 1px solid #fff;
   color: #fff;
   cursor: pointer;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;

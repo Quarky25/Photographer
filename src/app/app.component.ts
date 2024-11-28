@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ChildrenOutletContexts } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   isLoading = true;
-
+  constructor(private contexts: ChildrenOutletContexts) {
+   
+  }
   ngOnInit() {
     setTimeout(() => {
       this.fadeOutLoadingScreen();
@@ -26,5 +29,11 @@ export class AppComponent implements OnInit {
     setTimeout(() => {
       this.isLoading = false;
     }, 1500);
+  }
+  getRouteAnimationData() {
+    return this.contexts.getContext('primary')?.route?.snapshot?.data?.['animation'];
+  }
+  if () {
+    
   }
 }

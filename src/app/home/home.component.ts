@@ -1,12 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { LoadingComponent } from '../loading/loading.component';
+import { routeAnimation } from '../services/route-animation.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
+  
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent{
   slides = [
     {
       id: 0,
@@ -64,15 +66,10 @@ export class HomeComponent implements OnInit {
     color: '#ffffff',
   };
 
-  isLoading = true;
-
+  
   constructor() {}
 
-  ngOnInit(): void {
-    setTimeout(() => {
-      this.isLoading = false;
-    }, 3000);
-  }
+ 
 
   changeActive(id: number) {
     this.activeID = id;

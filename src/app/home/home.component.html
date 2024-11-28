@@ -1,9 +1,5 @@
-<div *ngIf="isLoading">
-  <app-loading></app-loading>
-</div>
-
-<div *ngIf="!isLoading" class="main-content">
-  <section class="wrapper" [ngClass]="{ loaded: !isLoading }">
+<div class="main-content">
+  <section class="wrapper">
     <div class="selectors">
       <div
         *ngFor="let slide of slides; let i = index"
@@ -27,7 +23,5 @@
     </aside>
   </section>
 
-  <div *ngIf="!isLoading">
-    <app-testemonials></app-testemonials>
-  </div>
+  <app-testemonials></app-testemonials>
 </div>
