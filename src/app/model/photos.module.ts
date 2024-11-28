@@ -178,10 +178,10 @@ export let photoList: IPhotos[]=
     desc: "At Millers Wedding.",
     award: false
   },
-<<<<<<< HEAD
+
 
  
-=======
+
   {
     id: "l",
     title: "Wild Waves",
@@ -205,6 +205,4 @@ export let photoList: IPhotos[]=
     award: true
 
   },
-
->>>>>>> d44961a7233b5405000234ccc8e0db91a6fee26c
 ]

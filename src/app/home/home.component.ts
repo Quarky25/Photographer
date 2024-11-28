@@ -33,7 +33,7 @@ export class HomeComponent implements OnInit {
       id: 3,
       header: 'Important Occasions',
       body: 'Preserving love, joy and timeless elegance.',
-      colour: '#f7cb05',
+      colour: '#ffe599',
       img: './images/portfolio/events/wedding.jpg',
     },
     {
