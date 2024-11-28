@@ -25,14 +25,16 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/award" routerLinkActive="active"
+            <a
+              class="nav-link"
+              [routerLink]="['/award']"
+              routerLinkActive="active"
               >Award</a
             >
           </li>
           <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
-              href="#"
               role="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
@@ -41,7 +43,9 @@
             </a>
             <ul class="dropdown-menu">
               <li>
-                <a class="dropdown-item" routerLink="/portfolio">Gallery</a>
+                <a class="dropdown-item" [routerLink]="['/portfolio']"
+                  >Gallery</a
+                >
               </li>
 
               <li class="dropdown-submenu">
@@ -63,7 +67,7 @@
                       <li class="dropdown-submenu">
                         @for (photo of photos; track $index) {
                         <a
-                          routerLink="detail/{{ $index }}"
+                          [routerLink]="['/details', $index]"
                           class="dropdown-item"
                           >{{ photo.title }}</a
                         >
@@ -83,7 +87,7 @@
                         @for (photo of photos; track $index) { @if (photo.id ==
                         'n') {
                         <a
-                          routerLink="detail/{{ $index }}"
+                          [routerLink]="['/details', $index]"
                           class="dropdown-item"
                           >{{ photo.title }}</a
                         >
@@ -102,7 +106,7 @@
                         @for (photo of photos; track $index) { @if (photo.id ==
                         'l') {
                         <a
-                          [routerLink]="['detail/{{ $index }}']"
+                          [routerLink]="['/details', $index]"
                           class="dropdown-item"
                           >{{ photo.title }}</a
                         >
@@ -123,7 +127,7 @@
                         @for (photo of photos; track $index) { @if (photo.id ==
                         'e') {
                         <a
-                          routerLink="detail/{{ $index }}"
+                          [routerLink]="['/details', $index]"
                           class="dropdown-item"
                           >{{ photo.title }}</a
                         >

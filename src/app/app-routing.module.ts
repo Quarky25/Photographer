@@ -13,10 +13,10 @@ import { LayoutComponent } from './layout/layout.component';
 
 const routes: Routes = [
   {path: 'landing', component: LoadingComponent, data: {animation: '*'}},
-
+  {path: '', redirectTo: 'landing', pathMatch: 'full'},
   {path: '', component: LayoutComponent, data: {animation: '*'},
     children: [
-      {path: '', redirectTo: 'home', pathMatch: 'full'},
+      
       { path: 'home', component: HomeComponent, data: {animation: '*'}},
       { path: 'contact', component: ContactComponent, data: {animation: '*'} },
       { path: 'about', component: AboutComponent, data: {animation: '*'} },
