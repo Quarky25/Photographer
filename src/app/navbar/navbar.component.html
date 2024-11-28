@@ -50,22 +50,86 @@
                   (click)="toggleSubmenu($event)"
                   >Project Details</a
                 >
-
                 <ul class="dropdown-menu submenu">
-                  <li>
-                    <a class="dropdown-item" routerLink="/details/1"
-                      >Project 1</a
+                  <li class="dropdown-submenu">
+                    <a
+                      class="dropdown-item dropdown-toggle"
+                      (click)="toggleSubmenu($event)"
+                      (click)="setID('all')"
+                      >All</a
                     >
+
+                    <ul class="dropdown-menu submenu">
+                      <li class="dropdown-submenu">
+                        @for (photo of photos; track $index) {
+                        <a
+                          routerLink="detail/{{ $index }}"
+                          class="dropdown-item"
+                          >{{ photo.title }}</a
+                        >
+                        }
+                      </li>
+                    </ul>
                   </li>
-                  <li>
-                    <a class="dropdown-item" routerLink="/details/2"
-                      >Project 2</a
+                  <li class="dropdown-submenu">
+                    <a
+                      class="dropdown-item dropdown-toggle"
+                      (click)="toggleSubmenu($event)"
+                      (click)="setID('n')"
+                      >Nature</a
                     >
+                    <ul class="dropdown-menu submenu">
+                      <li class="dropdown-submenu">
+                        @for (photo of photos; track $index) { @if (photo.id ==
+                        'n') {
+                        <a
+                          routerLink="detail/{{ $index }}"
+                          class="dropdown-item"
+                          >{{ photo.title }}</a
+                        >
+                        } }
+                      </li>
+                    </ul>
                   </li>
-                  <li>
-                    <a class="dropdown-item" routerLink="/details/3"
-                      >Project 3</a
+                  <li class="dropdown-submenu">
+                    <a
+                      class="dropdown-item dropdown-toggle"
+                      (click)="toggleSubmenu($event)"
+                      >Landscape</a
                     >
+                    <ul class="dropdown-menu submenu">
+                      <li class="dropdown-submenu" (click)="setID('l')">
+                        @for (photo of photos; track $index) { @if (photo.id ==
+                        'l') {
+                        <a
+                          routerLink="detail/{{ $index }}"
+                          class="dropdown-item"
+                          >{{ photo.title }}</a
+                        >
+                        } }
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a
+                      class="dropdown-item dropdown-toggle"
+                      (click)="toggleSubmenu($event)"
+                      (click)="setID('e')"
+                      >Events</a
+                    >
+
+                    <ul class="dropdown-menu submenu">
+                      <li class="dropdown-submenu">
+                        @for (photo of photos; track $index) { @if (photo.id ==
+                        'e') {
+                        <a
+                          routerLink="detail/{{ $index }}"
+                          class="dropdown-item"
+                          >{{ photo.title }}</a
+                        >
+                        } }
+                      </li>
+                    </ul>
                   </li>
                 </ul>
               </li>
