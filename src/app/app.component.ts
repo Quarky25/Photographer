@@ -7,6 +7,7 @@ import { ChildrenOutletContexts } from '@angular/router';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
+  title: string = 'Photographer';
   isLoading = true;
   constructor(private contexts: ChildrenOutletContexts) {
    
