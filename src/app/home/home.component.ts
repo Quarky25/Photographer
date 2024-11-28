@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LoadingComponent } from '../loading/loading.component';
 
 @Component({
   selector: 'app-home',
@@ -18,7 +19,7 @@ export class HomeComponent implements OnInit {
       id: 1,
       header: 'Second slide label',
       body: 'Some representative placeholder content for the second slide.',
-      colour: '#ba9077',
+      colour: '#f89d64ff',
       img: '/images/home/park.webp',
     },
     {
@@ -32,7 +33,7 @@ export class HomeComponent implements OnInit {
       id: 3,
       header: 'Third slide label',
       body: 'Some representative placeholder content for the third slide.',
-      colour: '#1ABC9C',
+      colour: '#d2532dff',
       img: './images/home/ocean.jpg',
     },
     {
