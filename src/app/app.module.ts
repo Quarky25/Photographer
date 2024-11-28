@@ -18,6 +18,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { FooterComponent } from './footer/footer.component';
 import { DetailsComponent } from './details/details.component';
 import { LoadingComponent } from './loading/loading.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { LoadingComponent } from './loading/loading.component';
     ReactiveFormsModule,
     TestemonialsComponent,
     StarRatingComponent,
+    CommonModule,
   ],
   bootstrap: [AppComponent],
 })
