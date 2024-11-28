@@ -155,4 +155,23 @@ export let photoList: IPhotos[]=
     img: "./images/portfolio/events/wedding.jpg",
     desc: "At Millers Wedding."
   },
+  {
+    id: "l",
+    title: "Wild Waves",
+    img: "./images/home/ocean.jpg",
+    desc: "A breathtaking moment captured at the moment of sunset."
+  },
+  {
+    id: "n",
+    title: "The bunnies journey",
+    img: "./images/home/park.webp",
+    desc: "A group of fluffy wanderers."
+  },
+  {
+    id: "l",
+    title: "One moment",
+    img: "./images/home/sunset.jpg",
+    desc: "A breathtaking moment captured at the moment of sunset."
+  },
+
 ]
