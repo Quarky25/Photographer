@@ -56,6 +56,7 @@
 
 .col-5 {
   height: 20vh;
+  margin-top: 1rem;
 }
 
 #social-icons {
@@ -73,7 +74,7 @@
   color: var(--light-gray);
   position: absolute;
   bottom: 3%;
-  right: 15%;
+  right: 30%;
 
   font-size: calc(0.55em + 1vw);
 }
