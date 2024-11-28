@@ -102,7 +102,7 @@
                         @for (photo of photos; track $index) { @if (photo.id ==
                         'l') {
                         <a
-                          routerLink="detail/{{ $index }}"
+                          [routerLink]="['detail/{{ $index }}']"
                           class="dropdown-item"
                           >{{ photo.title }}</a
                         >

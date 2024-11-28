@@ -32,8 +32,8 @@ export class LoadingComponent implements OnInit, OnDestroy {
       this.router.navigate(['/home']);
     }, 1000); // Adjust this timing to match your fade-out animation duration
 
-    this.router.navigate(['/home']);
-    this.router.navigate(['/home']);
+  
+    
 
   }
   
