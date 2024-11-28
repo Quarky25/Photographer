@@ -1,3 +1,7 @@
-<div [ngClass]="{ 'loading-screen': true, 'fade-out': fadeOut }">
+<div
+  [ngClass]="{ 'loading-screen': true, 'fade-out': fadeOut }"
+  [@fadeAnimation]
+  [@fadeIn]
+>
   <div class="loader"></div>
 </div>

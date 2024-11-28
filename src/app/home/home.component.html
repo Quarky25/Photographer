@@ -1,9 +1,14 @@
-<div *ngIf="isLoading">
-  <app-loading></app-loading>
-</div>
+<div class="main-content">
+  <section class="wrapper">
+    <div class="background-container">
+      <div
+        *ngFor="let slide of slides; let i = index"
+        class="background-image"
+        [ngStyle]="{ 'background-image': 'url(' + slide.img + ')' }"
+        [class.active]="i === activeID"
+      ></div>
+    </div>
 
-<div *ngIf="!isLoading" class="main-content">
-  <section class="wrapper" [ngClass]="{ loaded: !isLoading }">
     <div class="selectors">
       <div
         *ngFor="let slide of slides; let i = index"
@@ -21,13 +26,12 @@
         [style]="buttonStyle"
         (mouseover)="buttonColour()"
         (mouseout)="buttonColour()"
+        routerLink="/portfolio"
       >
-        Read More
+        Discover More
       </button>
     </aside>
   </section>
 
-  <div *ngIf="!isLoading">
-    <app-testemonials></app-testemonials>
-  </div>
+  <app-testemonials></app-testemonials>
 </div>

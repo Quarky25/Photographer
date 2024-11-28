@@ -1,12 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { LoadingComponent } from '../loading/loading.component';
+import { routeAnimation } from '../services/route-animation.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
+  
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent{
   slides = [
     {
       id: 0,
@@ -31,24 +33,24 @@ export class HomeComponent implements OnInit {
     },
     {
       id: 3,
-      header: 'Meaningful Moments',
-      body: 'Turn ordinary moments into extraordinary memories.',
-      colour: '#1ABC9C',
-      img: './images/home/ocean.jpg',
+      header: 'Important Occasions',
+      body: 'Preserving love, joy and timeless elegance.',
+      colour: '#2e8968',
+      img: './images/portfolio/events/wedding.jpg',
     },
     {
       id: 4,
-      header: 'Creative Compositions',
-      body: 'Creating something unforgettable.',
-      colour: '#1ABC9C',
-      img: './images/home/park.webp',
+      header: 'Tiniest Details',
+      body: `Depicting the beauty in nature at it's smallest.`,
+      colour: '#45818e',
+      img: './images/portfolio/nature/snail.jpg',
     },
     {
       id: 5,
-      header: 'Breathtaking Landscapes',
-      body: 'Capturing moments, emotions, and stories.',
-      colour: '#1ABC9C',
-      img: './images/home/sunset.jpg',
+      header: 'Happy Gatherings',
+      body: 'Appreciating the subtle wonders that surround us.',
+      colour: '#e69138',
+      img: './images/portfolio/events/family.jpg',
     },
   ];
 
@@ -64,15 +66,10 @@ export class HomeComponent implements OnInit {
     color: '#ffffff',
   };
 
-  isLoading = true;
-
+  
   constructor() {}
 
-  ngOnInit(): void {
-    setTimeout(() => {
-      this.isLoading = false;
-    }, 3000);
-  }
+ 
 
   changeActive(id: number) {
     this.activeID = id;

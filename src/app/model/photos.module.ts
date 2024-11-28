@@ -178,6 +178,10 @@ export let photoList: IPhotos[]=
     desc: "At Millers Wedding.",
     award: false
   },
+
+
+ 
+
   {
     id: "l",
     title: "Wild Waves",
@@ -200,6 +204,5 @@ export let photoList: IPhotos[]=
     desc: "A breathtaking moment captured at the moment of sunset.",
     award: true
 
-  },
-
+  }
 ]

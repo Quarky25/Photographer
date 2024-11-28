@@ -19,6 +19,12 @@ import { FooterComponent } from './footer/footer.component';
 import { DetailsComponent } from './details/details.component';
 import { LoadingComponent } from './loading/loading.component';
 
+import { LayoutComponent } from './layout/layout.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+
+import { CommonModule } from '@angular/common';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,6 +41,7 @@ import { LoadingComponent } from './loading/loading.component';
     PortfolioComponent,
     DetailsComponent,
     LoadingComponent,
+    LayoutComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,6 +51,10 @@ import { LoadingComponent } from './loading/loading.component';
     ReactiveFormsModule,
     TestemonialsComponent,
     StarRatingComponent,
+    CommonModule,
+  ],
+  providers: [
+    provideAnimationsAsync(),
   ],
   bootstrap: [AppComponent],
 })
