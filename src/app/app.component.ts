@@ -6,31 +6,13 @@ import { ChildrenOutletContexts } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent implements OnInit {
+export class AppComponent  {
   title: string = 'Photographer';
   isLoading = true;
   constructor(private contexts: ChildrenOutletContexts) {
    
   }
-  ngOnInit() {
-    setTimeout(() => {
-      this.fadeOutLoadingScreen();
-    }, 3000);
-  }
-
-  fadeOutLoadingScreen() {
-    const loadingScreen = document.querySelector(
-      '.loading-screen'
-    ) as HTMLElement;
-
-    if (loadingScreen) {
-      loadingScreen.classList.add('fade-out');
-    }
-
-    setTimeout(() => {
-      this.isLoading = false;
-    }, 1500);
-  }
+ 
   getRouteAnimationData() {
     return this.contexts.getContext('primary')?.route?.snapshot?.data?.['animation'];
   }

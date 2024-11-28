@@ -204,10 +204,5 @@ export let photoList: IPhotos[]=
     desc: "A breathtaking moment captured at the moment of sunset.",
     award: true
 
-  },
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 16770fee3363a530df1a86eecffc3a0e9ff60742
+  }
 ]
