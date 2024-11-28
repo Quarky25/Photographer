@@ -43,7 +43,7 @@ export let photoList: IPhotos[]=
     title: "Slow",
     img: "./images/portfolio/nature/snail.jpg",
     desc: "A snail on its way.",
-    award: false
+    award: true
   },
   {
     id: "n",
@@ -141,7 +141,7 @@ export let photoList: IPhotos[]=
     title: "Family reunion",
     img: "./images/portfolio/events/family.jpg",
     desc: "The Smtihs Family Reunion Party",
-    award: false
+    award: true
   },
   {
     id: "e",
@@ -176,12 +176,8 @@ export let photoList: IPhotos[]=
     title: "Millers Wedding",
     img: "./images/portfolio/events/wedding.jpg",
     desc: "At Millers Wedding.",
-    award: false
+    award: true
   },
-
-
- 
-
   {
     id: "l",
     title: "Wild Waves",

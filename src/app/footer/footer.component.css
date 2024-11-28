@@ -23,7 +23,7 @@
     var(--atomic-tangerine) 0%,
     var(--cinnabar) 100%
   );
-  border-radius: 0 15% 0 50%;
+  border-radius: 0 12% 0 50%;
 }
 
 .footer {
@@ -44,7 +44,7 @@
 .nav-link {
   color: var(--light-gray);
   filter: brightness(0.85);
-  font-size: calc(0.4em + 1vw);
+  font-size: calc(0.35em + 1vw);
   padding: 0 10px;
 }
 
@@ -76,7 +76,7 @@
   bottom: 3%;
   right: 30%;
 
-  font-size: calc(0.55em + 1vw);
+  font-size: calc(0.35em + 1vw);
 }
 
 .iconAnim {
