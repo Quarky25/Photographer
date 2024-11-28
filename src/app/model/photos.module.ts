@@ -16,7 +16,8 @@ export class PhotosModule {
 export interface IPhotos {
   id: string,
   title: string,
-  img: string
+  img: string,
+  desc: string
 
 };
 
@@ -24,112 +25,134 @@ export let photoList: IPhotos[]=
 [
   {
     id: "n",
-    title: "",
-    img: "./images/portfolio/nature/bee.jpg"
+    title: "The Dandelions visitor",
+    img: "./images/portfolio/nature/bee.jpg",
+    desc: "On this one warm spring morning, the dandelion was no longer lonley - if only for a moment."
   },
   {
     id: "n",
-    title: "",
-    img: "./images/portfolio/nature/daisy.jpg"
+    title: "On Paving",
+    img: "./images/portfolio/nature/daisy.jpg",
+    desc: "A single daisy, Growing through paving stone."
   },
   {
     id: "n",
-    title: "",
-    img: "./images/portfolio/nature/snail.jpg"
+    title: "Slow",
+    img: "./images/portfolio/nature/snail.jpg",
+    desc: "A snail on its way."
   },
   {
     id: "n",
-    title: "",
-    img: "./images/portfolio/nature/swan.jpg"
+    title: "Swan River",
+    img: "./images/portfolio/nature/swan.jpg",
+    desc: "A majestic swan, calling this river its home."
   },
   {
     id: "n",
-    title: "",
-    img: "./images/portfolio/nature/sprout.jpg"
+    title: "Growth",
+    img: "./images/portfolio/nature/sprout.jpg",
+    desc: ""
   },
   {
     id: "l",
-    title: "",
-    img: "./images/portfolio/landscape/blue.jpg"
+    title: "Blue",
+    img: "./images/portfolio/landscape/blue.jpg",
+    desc: "A single tree framed by the wast blue skies above."
   },
   {
     id: "l",
-    title: "",
-    img: "./images/portfolio/landscape/caucasus.jpg"
+    title: "Caucasus",
+    img: "./images/portfolio/landscape/caucasus.jpg",
+    desc: "A view from atop the mountains."
   },
   {
     id: "l",
-    title: "",
-    img: "./images/portfolio/landscape/forest.jpg"
+    title: "Into the forest",
+    img: "./images/portfolio/landscape/forest.jpg",
+    desc: "On the way into the forest."
   },
   {
     id: "l",
-    title: "",
-    img: "./images/portfolio/landscape/forest_2.jpg"
+    title: "Wilderness",
+    img: "./images/portfolio/landscape/forest_2.jpg",
+    desc: ""
   },
   {
     id: "l",
-    title: "",
-    img: "./images/portfolio/landscape/mountains.jpg"
+    title: "Mountain view",
+    img: "./images/portfolio/landscape/mountains.jpg",
+    desc: "A view from atop the mountains."
   },
   {
     id: "l",
-    title: "",
-    img: "./images/portfolio/landscape/sunrise.jpg"
+    title: "Sunrise",
+    img: "./images/portfolio/landscape/sunrise.jpg",
+    desc: ""
   },
   {
     id: "l",
-    title: "",
-    img: "./images/portfolio/landscape/sunset.jpg"
+    title: "Sunset",
+    img: "./images/portfolio/landscape/sunset.jpg",
+    desc: ""
   },
   {
     id: "l",
-    title: "",
-    img: "./images/portfolio/landscape/tree.jpg"
+    title: "Tree",
+    img: "./images/portfolio/landscape/tree.jpg",
+    desc: ""
   },
   {
     id: "l",
-    title: "",
-    img: "./images/portfolio/landscape/village.jpg"
+    title: "cozy Village",
+    img: "./images/portfolio/landscape/village.jpg",
+    desc: ""
   },
   {
     id: "e",
-    title: "",
-    img: "./images/portfolio/events/cocktails.jpg"
+    title: "Drinks",
+    img: "./images/portfolio/events/cocktails.jpg",
+    desc: "These lovely drinks where served at Millers Wedding."
   },
   {
     id: "e",
-    title: "",
-    img: "./images/portfolio/events/drink.jpg"
+    title: "Drink",
+    img: "./images/portfolio/events/drink.jpg",
+    desc: "Thes lovely drink was served at Millers Wedding."
   },
   {
     id: "e",
-    title: "",
-    img: "./images/portfolio/events/family.jpg"
+    title: "Family reunion",
+    img: "./images/portfolio/events/family.jpg",
+    desc: "The Smtihs Family Reunion Party"
   },
   {
     id: "e",
-    title: "",
-    img: "./images/portfolio/events/groo.jpg"
+    title: "Millers Wedding",
+    img: "./images/portfolio/events/groo.jpg",
+    desc: "At Millers Wedding."
   },
   {
     id: "e",
-    title: "",
-    img: "./images/portfolio/events/holiday-table.jpg"
+    title: "40th Birthday - Jane Doe",
+    img: "./images/portfolio/events/holiday-table.jpg",
+    desc: "Jane Does 40th birthday Party"
   },
   {
     id: "e",
-    title: "",
-    img: "./images/portfolio/events/newlyweds.jpg"
+    title: "Smiths Wedding",
+    img: "./images/portfolio/events/newlyweds.jpg",
+    desc: "At Millers Wedding."
   },
   {
     id: "e",
-    title: "",
-    img: "./images/portfolio/events/skewers.jpg"
+    title: "40th Birthday - Jane Doe",
+    img: "./images/portfolio/events/skewers.jpg",
+    desc: "Jane Does 40th birthday Party"
   },
   {
     id: "e",
-    title: "",
-    img: "./images/portfolio/events/wedding.jpg"
+    title: "Millers Wedding",
+    img: "./images/portfolio/events/wedding.jpg",
+    desc: "At Millers Wedding."
   },
 ]

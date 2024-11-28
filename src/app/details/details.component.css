@@ -1,27 +1,26 @@
-#details {
+#heading {
+  font-size: calc(2.2rem + 1vw);
+  color: white;
+  margin-top: 10rem;
+  margin-bottom: 0;
+  padding: 0 1rem 1rem 4rem;
+  background: linear-gradient(to left, #35696200 0%, var(--rich-black) 100%);
+
+  font-family: "Lugrasimo", cursive, serif;
+  font-weight: 500;
+}
+
+.row {
+  box-shadow: 0 0 25px 10px var(--rich-black);
+  padding-right: calc(2rem + 2vw);
   background-color: var(--rich-black);
-  width: 100vw;
-  height: 100%;
 }
-.title {
-  padding: 4% 6%;
-}
-.imgCar {
+
+.photo {
   max-width: 100%;
   height: auto;
-}
-.priceBanner {
-  position: absolute;
-  width: 30%;
-  top: 20px;
-  right: -20px;
-  padding: 0.5rem 4rem;
-  opacity: 75%;
-  box-shadow: 2px 2px 2px 3px var(--flame);
-  color: white;
-  border-radius: 5px;
-  font-size: calc(0.8em + 1vw);
-  text-align: end;
+  border: 3px solid var(--caribbean-current);
+  border-radius: 25px;
 }
 
 .imgBox {
@@ -29,23 +28,50 @@
   width: 45%;
   padding: 0;
 }
+
+@media screen and (max-width: 500px) {
+  .imgBox {
+    position: relative;
+    width: 100%;
+    padding: 0;
+  }
+  .row {
+    padding: 1rem;
+  }
+  #heading {
+    margin-top: 5rem;
+  }
+}
+
 #desc {
-  border: 2px solid var(--rich-black);
-  background-color: var(--gray);
-  box-shadow: inset 0 0 55px 5px var(--rich-black);
+  /* box-shadow: -15px 0 2px 0 var(--rich-black); */
+  background-color: var(--rich-black);
   padding: 0.5rem 1.5rem;
 
   p {
     font-size: calc(0.7em + 1vw);
-    color: var(--gray-darker);
+    color: var(--light-gray);
+    padding: calc(0.8rem + 2vw);
+    text-wrap: wrap;
   }
 }
 .btn {
   background-color: var(--flame);
-  margin: 3rem;
+  margin: 3rem 5rem;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn:hover {
-  transform: scale(1.1);
-  background-color: var(--red-cmyk);
+  transform: scale(1.15);
+  background-color: var(--rich-black);
+}
+#btnBg {
+  width: 100vw;
+  height: fit-content;
+  background: linear-gradient(
+    to right,
+    #35696200 0%,
+    var(--atomic-tangerine) 60%,
+    var(--cinnabar) 100%
+  );
 }
