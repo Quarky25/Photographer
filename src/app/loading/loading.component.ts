@@ -1,4 +1,4 @@
-import { Component, OnChanges } from '@angular/core';
+import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-loading',
@@ -6,22 +6,19 @@ import { Component, OnChanges } from '@angular/core';
   styleUrls: ['./loading.component.css'],
 })
 export class LoadingComponent implements OnChanges {
-  fadeOut = false;
+  @Input() isLoading: boolean = true;
+  fadeOut: boolean = false;
 
-  ngOnInit(): void {
-    setTimeout(() => {
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes['isLoading'] && !changes['isLoading'].currentValue) {
       this.triggerFadeOut();
-    }, 3000);
+    }
   }
 
   triggerFadeOut(): void {
     this.fadeOut = true;
     setTimeout(() => {
-      this.fadeOut = false;
+      this.isLoading = false;
     }, 1500);
-  }
-
-  ngOnDestroy(): void {
-    this.fadeOut = false;
   }
 }
