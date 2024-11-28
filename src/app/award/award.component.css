@@ -50,3 +50,19 @@
 .award-content {
   font-size: 1.2rem;
 }
+.award-container {
+  transform: translateY(20px);
+  animation: slideIn 1s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

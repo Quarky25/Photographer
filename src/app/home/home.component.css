@@ -117,3 +117,19 @@ aside.panel button.panel-button:hover {
 aside.panel button.panel-button:focus {
   outline: none;
 }
+.main-content {
+  transform: translateY(20px);
+  animation: slideIn 1s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

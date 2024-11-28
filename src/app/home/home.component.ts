@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { LoadingComponent } from '../loading/loading.component';
-import { routeAnimation } from '../services/route-animation.service';
+import { fadInUp, routeAnimation } from '../services/route-animation.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
+  animations: [routeAnimation, fadInUp]
   
 })
 export class HomeComponent{

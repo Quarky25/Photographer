@@ -13,13 +13,13 @@ export const routeAnimation =
   ])
   transition(':leave', [
     style({ opacity: 1 }),
-    animate('300ms ease-out', style({ opacity: 0 }))
+    animate('500ms ease-out', style({ opacity: 0 }))
   ]),
   
   // Fade in when entering
   transition(':enter', [
     style({ opacity: 0 }),
-    animate('300ms ease-in', style({ opacity: 1 }))
+    animate('500ms ease-in', style({ opacity: 1 }))
   ]),
   
   // Fade in with stagger effect for child elements
@@ -31,6 +31,9 @@ export const routeAnimation =
       ])
     ], { optional: true })
   ])
+
+
+  
   export const fadInUp =
   trigger('fadeIn', [
     transition(':enter', [
