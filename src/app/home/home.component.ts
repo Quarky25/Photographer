@@ -6,7 +6,7 @@ import { fadInUp, routeAnimation } from '../services/route-animation.service';
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
-  animations: [routeAnimation, fadInUp]
+  animations: [routeAnimation]
   
 })
 export class HomeComponent{

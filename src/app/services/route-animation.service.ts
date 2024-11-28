@@ -41,7 +41,7 @@ export const routeAnimation =
         style({ opacity: 0, transform: 'translateY(20px)' }),
        
         stagger(100, [
-          animate('0.8s ease-out', style({ opacity: 1, transform: 'translateY(0)' }))
+          animate('800ms ease-out', style({ opacity: 1, transform: 'translateY(0)' }))
         ])
       ], { optional: true })
     ])
