@@ -141,13 +141,13 @@ aside.panel h2.panel-header,
 aside.panel p.panel-info {
   margin: 0;
   padding: 1.2rem 3.4rem;
-  font-family: 'Antic Didone';
 }
 
 aside.panel h2.panel-header {
   font-weight: normal;
   font-size: 2.5rem;
   text-transform: capitalize;
+  font-family: 'Lugrasimo';
 }
 
 aside.panel p.panel-info {

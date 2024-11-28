@@ -1,15 +1,14 @@
 .container {
   background-color: rgba(255, 127, 80, 0.405);
   margin-top: 6rem;
-
   margin-bottom: 4rem;
-
   border-radius: 5px;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 4rem;
   color: var(--midnight-green);
+  font-family: "Lugrasimo", cursive, serif;
 }
 
 p {
