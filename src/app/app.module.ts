@@ -18,12 +18,12 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { FooterComponent } from './footer/footer.component';
 import { DetailsComponent } from './details/details.component';
 import { LoadingComponent } from './loading/loading.component';
-<<<<<<< HEAD
+
 import { LayoutComponent } from './layout/layout.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-=======
+
 import { CommonModule } from '@angular/common';
->>>>>>> 16770fee3363a530df1a86eecffc3a0e9ff60742
+
 
 @NgModule({
   declarations: [
