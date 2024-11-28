@@ -13,48 +13,6 @@
   z-index: -1;
 }
 
-<<<<<<< HEAD
-@keyframes l6 {
-  0% { 
-    background-size: 0 200%; 
-    background-position: 0 0, 100% 0; 
-  }
-  50% { 
-    background-size: calc(60% + .5lh) 200%; 
-    background-position: 0 0, 100% 0; 
-  }
-  50.01% { 
-    background-size: calc(60% + .5lh) 200%; 
-    background-position: 0 100%, 100% 100%; 
-  }
-  100% { 
-    background-size: 0 200%; 
-    background-position: 0 100%, 100% 100%; 
-  }
-} */
-
-/* @keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-} */
-
-/* .loading-screen.fade-out {
-  animation: fadeOut 1.5s ease-in-out forwards;
-} */
-=======
 .background-image {
   position: absolute;
   top: 0;
@@ -73,7 +31,6 @@
 .wrapper.loaded {
   opacity: 1;
 }
->>>>>>> 16770fee3363a530df1a86eecffc3a0e9ff60742
 
 .selectors {
   position: absolute;
