@@ -30,24 +30,24 @@ export class HomeComponent implements OnInit {
     },
     {
       id: 3,
-      header: 'Meaningful Moments',
-      body: 'Turn ordinary moments into extraordinary memories.',
+      header: 'Important Occasions',
+      body: 'Preserving love, joy and timeless elegance.',
       colour: '#1ABC9C',
-      img: './images/home/ocean.jpg',
+      img: './images/portfolio/events/wedding.jpg',
     },
     {
       id: 4,
-      header: 'Creative Compositions',
-      body: 'Creating something unforgettable.',
+      header: 'Tiniest Details',
+      body: `Depicting the beauty in nature at it's smallest.`,
       colour: '#1ABC9C',
-      img: './images/home/park.webp',
+      img: './images/portfolio/nature/snail.jpg',
     },
     {
       id: 5,
-      header: 'Breathtaking Landscapes',
-      body: 'Capturing moments, emotions, and stories.',
+      header: 'Happy Gatherings',
+      body: 'Appreciating the subtle wonders that surround us.',
       colour: '#1ABC9C',
-      img: './images/home/sunset.jpg',
+      img: './images/portfolio/events/family.jpg',
     },
   ];
 
