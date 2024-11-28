@@ -155,4 +155,6 @@ export let photoList: IPhotos[]=
     img: "./images/portfolio/events/wedding.jpg",
     desc: "At Millers Wedding."
   },
+
+ 
 ]
