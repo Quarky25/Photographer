@@ -205,6 +205,9 @@ export let photoList: IPhotos[]=
     award: true
 
   },
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 16770fee3363a530df1a86eecffc3a0e9ff60742
 ]
