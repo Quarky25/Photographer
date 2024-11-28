@@ -1,13 +1,5 @@
-<<<<<<< HEAD
 <div class="main-content">
   <section class="wrapper">
-=======
-<div *ngIf="isLoading">
-  <app-loading></app-loading>
-</div>
-
-<div *ngIf="!isLoading" class="main-content">
-  <section class="wrapper" [ngClass]="{ loaded: !isLoading }">
     <div class="background-container">
       <div
         *ngFor="let slide of slides; let i = index"
@@ -17,7 +9,6 @@
       ></div>
     </div>
 
->>>>>>> 16770fee3363a530df1a86eecffc3a0e9ff60742
     <div class="selectors">
       <div
         *ngFor="let slide of slides; let i = index"
