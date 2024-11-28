@@ -18,22 +18,20 @@
       ></div>
     </div>
 
-        <aside class="panel" [style]="panelStyle">
-          <h2 class="panel-header">{{ slides[activeID].header }}</h2>
-          <p class="panel-info">{{ slides[activeID].body }}</p>
-          <button
-            class="panel-button"
-            [style]="buttonStyle"
-            (mouseover)="buttonColour()"
-            (mouseout)="buttonColour()"
-            routerLink="/portfolio"
-          >
-            Discover More
-          </button>
-        </aside>
-      </section>
-
-      <app-testemonials></app-testemonials>
-    </div>
+    <aside class="panel" [style]="panelStyle">
+      <h2 class="panel-header">{{ slides[activeID].header }}</h2>
+      <p class="panel-info">{{ slides[activeID].body }}</p>
+      <button
+        class="panel-button"
+        [style]="buttonStyle"
+        (mouseover)="buttonColour()"
+        (mouseout)="buttonColour()"
+        routerLink="/portfolio"
+      >
+        Discover More
+      </button>
+    </aside>
   </section>
+
+  <app-testemonials></app-testemonials>
 </div>
