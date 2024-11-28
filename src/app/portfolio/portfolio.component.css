@@ -42,6 +42,7 @@
   background-color: var(--rich-black);
   border: 1px solid var(--caribbean-current);
   border-radius: 5px;
+  position: relative;
 }
 
 .imgBg:hover {
@@ -117,4 +118,55 @@
     var(--atomic-tangerine) 60%,
     var(--cinnabar) 100%
   );
+}
+
+.ribbon {
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  z-index: 1;
+  overflow: hidden;
+  width: 75px;
+  height: 75px;
+}
+.ribbon span {
+  font-size: 0.65rem;
+  color: var(--light-gray);
+  text-transform: uppercase;
+  color: var(--rich-black);
+  font-weight: 800;
+  text-align: center;
+  line-height: 20px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  width: 100px;
+  display: block;
+  background: var(--atomic-tangerine);
+  background: linear-gradient(var(--atomic-tangerine) 0%, var(--cinnabar) 100%);
+  box-shadow: 0 3px 10px -5px var(--rich-black);
+  position: absolute;
+  top: 19px;
+  right: -21px;
+}
+.ribbon span::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 100%;
+  z-index: -1;
+  border-left: 3px solid var(--d-cinnabar);
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid var(--d-cinnabar);
+}
+.ribbon span::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 100%;
+  z-index: -1;
+  border-left: 3px solid transparent;
+  border-right: 3px solid var(--d-cinnabar);
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid var(--d-cinnabar);
 }

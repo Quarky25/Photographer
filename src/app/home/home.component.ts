@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LoadingComponent } from '../loading/loading.component';
 
 @Component({
   selector: 'app-home',
@@ -9,45 +10,45 @@ export class HomeComponent implements OnInit {
   slides = [
     {
       id: 0,
-      header: 'First slide label',
-      body: 'Some representative placeholder content for the first slide.',
+      header: 'Meaningful Moments',
+      body: 'Turn ordinary moments into extraordinary memories.',
       colour: '#242846',
       img: './images/home/ocean.jpg',
     },
     {
       id: 1,
-      header: 'Second slide label',
-      body: 'Some representative placeholder content for the second slide.',
+      header: 'Creative Compositions',
+      body: 'Creating something unforgettable.',
       colour: '#ba9077',
-      img: '/images/home/park.webp',
-    },
-    {
-      id: 2,
-      header: 'Third slide label',
-      body: 'Some representative placeholder content for the third slide.',
-      colour: '#1ABC9C',
-      img: '/images/home/sunset.jpg',
-    },
-    {
-      id: 3,
-      header: 'Third slide label',
-      body: 'Some representative placeholder content for the third slide.',
-      colour: '#1ABC9C',
-      img: './images/home/ocean.jpg',
-    },
-    {
-      id: 4,
-      header: 'Third slide label',
-      body: 'Some representative placeholder content for the third slide.',
-      colour: '#1ABC9C',
       img: './images/home/park.webp',
     },
     {
-      id: 5,
-      header: 'Third slide label',
-      body: 'Some representative placeholder content for the third slide.',
+      id: 2,
+      header: 'Breathtaking Landscapes',
+      body: 'Capturing moments, emotions, and stories.',
       colour: '#1ABC9C',
       img: './images/home/sunset.jpg',
+    },
+    {
+      id: 3,
+      header: 'Important Occasions',
+      body: 'Preserving love, joy and timeless elegance.',
+      colour: '#1ABC9C',
+      img: './images/portfolio/events/wedding.jpg',
+    },
+    {
+      id: 4,
+      header: 'Tiniest Details',
+      body: `Depicting the beauty in nature at it's smallest.`,
+      colour: '#1ABC9C',
+      img: './images/portfolio/nature/snail.jpg',
+    },
+    {
+      id: 5,
+      header: 'Happy Gatherings',
+      body: 'Appreciating the subtle wonders that surround us.',
+      colour: '#1ABC9C',
+      img: './images/portfolio/events/family.jpg',
     },
   ];
 
