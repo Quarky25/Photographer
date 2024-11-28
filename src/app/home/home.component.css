@@ -1,4 +1,4 @@
-.loading-screen {
+/* .loading-screen {
   position: absolute;
   top: 0;
   left: 0;
@@ -14,9 +14,9 @@
   transition: opacity 1s ease-in-out;
   animation: fadeIn 2s ease-in-out forwards;
   flex-direction: column; 
-}
+} */
 
-.loader {
+/* .loader {
   width: fit-content;
   font-size: 40px;
   font-family: system-ui, sans-serif;
@@ -29,9 +29,9 @@
     conic-gradient(from -135deg at 1lh 50%, transparent 90deg, #000 0) text no-repeat;
   animation: l6 2s linear infinite;
   margin-bottom: 1rem; 
-}
+} */
 
-.loader:before {
+/* .loader:before {
   content: "Welcome to Spicy Photography";
 }
 
@@ -52,19 +52,9 @@
     background-size: 0 200%; 
     background-position: 0 100%, 100% 100%; 
   }
-}
+} */
 
-.wrapper {
-  opacity: 0;
-  transition: opacity 1.5s ease-in-out;
-  
-}
-
-.wrapper.loaded {
-  opacity: 1;
-}
-
-@keyframes fadeIn {
+/* @keyframes fadeIn {
   0% {
     opacity: 0;
   }
@@ -80,10 +70,20 @@
   100% {
     opacity: 0;
   }
+} */
+
+/* .loading-screen.fade-out {
+  animation: fadeOut 1.5s ease-in-out forwards;
+} */
+
+.wrapper {
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+  
 }
 
-.loading-screen.fade-out {
-  animation: fadeOut 1.5s ease-in-out forwards;
+.wrapper.loaded {
+  opacity: 1;
 }
 
 .selectors {
@@ -141,13 +141,13 @@ aside.panel h2.panel-header,
 aside.panel p.panel-info {
   margin: 0;
   padding: 1.2rem 3.4rem;
-  font-family: 'Antic Didone';
 }
 
 aside.panel h2.panel-header {
   font-weight: normal;
   font-size: 2.5rem;
   text-transform: capitalize;
+  font-family: 'Lugrasimo';
 }
 
 aside.panel p.panel-info {

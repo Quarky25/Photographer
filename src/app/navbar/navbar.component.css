@@ -10,7 +10,7 @@
 
 .navbar .navbar-brand:hover,
 .navbar .nav-link:hover {
-  color: pink;
+  color: var(--orange-pantone);;
 }
 .dropdown-submenu {
   position: relative;

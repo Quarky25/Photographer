@@ -17,6 +17,7 @@ import { AwardComponent } from './award/award.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { FooterComponent } from './footer/footer.component';
 import { DetailsComponent } from './details/details.component';
+import { LoadingComponent } from './loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { DetailsComponent } from './details/details.component';
     AwardComponent,
     PortfolioComponent,
     DetailsComponent,
+    LoadingComponent,
   ],
   imports: [
     BrowserModule,
