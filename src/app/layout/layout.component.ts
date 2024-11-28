@@ -21,6 +21,7 @@ export class LayoutComponent {
         this.router.navigate(['/home'])
       }, 500);
     }
+    
   }
   getRouteAnimationData() {
     return this.contexts.getContext('primary')?.route?.snapshot?.data?.['animation'];

@@ -15,7 +15,7 @@ import { Router } from '@angular/router';
 export class LoadingComponent implements OnInit{
   fadeOut = false;
   isLoading: boolean = true
-  constructor(private router: Router, ) {
+  constructor(private router: Router ) {
 
   }
   ngOnInit(): void {
@@ -27,6 +27,7 @@ export class LoadingComponent implements OnInit{
   triggerFadeOut(): void {
     this.fadeOut = true;
     this.router.navigate(['/home'])
+    
     setTimeout(() => {
 
       this.fadeOut = false;
