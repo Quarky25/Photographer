@@ -12,24 +12,33 @@ import { LoadingComponent } from './loading/loading.component';
 import { LayoutComponent } from './layout/layout.component';
 
 const routes: Routes = [
-  {path: 'landing', component: LoadingComponent, data: {animation: '*'}},
-
-  {path: '', component: LayoutComponent, data: {animation: '*'},
+  { path: 'landing', component: LoadingComponent, data: { animation: '' } },
+  { path: '', redirectTo: 'landing', pathMatch: 'full' },
+  {
+    path: '',
+    component: LayoutComponent,
+    data: { animation: '' },
     children: [
-      {path: '', redirectTo: 'home', pathMatch: 'full'},
-      { path: 'home', component: HomeComponent, data: {animation: '*'}},
-      { path: 'contact', component: ContactComponent, data: {animation: '*'} },
-      { path: 'about', component: AboutComponent, data: {animation: '*'} },
-      {path: 'award', component: AwardComponent, data: {animation: '*'}},
-      {path: 'portfolio', component: PortfolioComponent, data: {animation: '*'}},
-      {path: 'details/:id', component: DetailsComponent, data: {animation: '*'}}
-    ]
-  }
-  
+      { path: 'home', component: HomeComponent, data: { animation: '' } },
+      { path: 'contact', component: ContactComponent, data: { animation: '' } },
+      { path: 'about', component: AboutComponent, data: { animation: '' } },
+      { path: 'award', component: AwardComponent, data: { animation: '' } },
+      {
+        path: 'portfolio',
+        component: PortfolioComponent,
+        data: { animation: '' },
+      },
+      {
+        path: 'details/:id',
+        component: DetailsComponent,
+        data: { animation: '' },
+      },
+    ],
+  },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {enableViewTransitions: true})],
-  exports: [RouterModule]
+  imports: [RouterModule.forRoot(routes, { enableViewTransitions: true })],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
