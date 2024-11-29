@@ -13,7 +13,10 @@ description: string = 'For outstanding achievement in capturing breathtaking mom
 backgroundImages: string[] = [
   './images/home/ocean.jpg',
   './images/home/park.webp',
-  './images/home/sunset.jpg'
+  './images/home/sunset.jpg',
+  './images/portfolio/events/wedding.jpg',
+  './images/portfolio/nature/snail.jpg',
+  './images/portfolio/events/family.jpg',
 ];
 currentBackgroundIndex = 0;
 @HostBinding('style.--bg-image') get bgImage() {

@@ -21,7 +21,7 @@ export class LoadingComponent implements OnInit, OnDestroy {
     setTimeout(() => {
       this.isLoading = false;
       this.triggerFadeOut();
-    }, 500);
+    }, 500); //! Timing until the loading page is showing up 
   }
   
   triggerFadeOut(): void {
