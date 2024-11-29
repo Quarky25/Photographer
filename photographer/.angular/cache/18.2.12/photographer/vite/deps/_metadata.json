@@ -1,0 +1,55 @@
+{
+  "hash": "fb652881",
+  "configHash": "b8eea808",
+  "lockfileHash": "96f61a2c",
+  "browserHash": "77c93afb",
+  "optimized": {
+    "@angular/core": {
+      "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "8c5b7ca2",
+      "needsInterop": false
+    },
+    "@angular/forms": {
+      "src": "../../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
+      "file": "@angular_forms.js",
+      "fileHash": "bbbb7798",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "c07f4e9f",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "65b0bc91",
+      "needsInterop": false
+    },
+    "@angular/common": {
+      "src": "../../../../../../node_modules/@angular/common/fesm2022/common.mjs",
+      "file": "@angular_common.js",
+      "fileHash": "a910b037",
+      "needsInterop": false
+    },
+    "primeng/carousel": {
+      "src": "../../../../../../node_modules/primeng/fesm2022/primeng-carousel.mjs",
+      "file": "primeng_carousel.js",
+      "fileHash": "1122abe2",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-UIAHAUWA": {
+      "file": "chunk-UIAHAUWA.js"
+    },
+    "chunk-54L2ORA5": {
+      "file": "chunk-54L2ORA5.js"
+    },
+    "chunk-KCSUZAPK": {
+      "file": "chunk-KCSUZAPK.js"
+    }
+  }
+}
